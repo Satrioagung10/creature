@@ -167,6 +167,16 @@ hr {
   transform: scale(0.9);
 }
 
+.card {
+  border-radius: 10px;
+  box-shadow: 3px 8px 19px 0px rgba(0, 0, 0, 0.04), 14px 32px 35px 0px rgba(0, 0, 0, 0.03), 31px 72px 47px 0px rgba(0, 0, 0, 0.02), 54px 128px 56px 0px rgba(0, 0, 0, 0.01), 85px 200px 61px 0px rgba(0, 0, 0, 0.00);
+  z-index: -100;
+}
+
+.card-btn {
+  border-radius: 10px;
+}
+
 @media (max-width: 1280px) {
 
 }
@@ -294,6 +304,10 @@ hr {
     right: 8%;
     bottom: 3%;
   }
+
+  .card {
+    width: 80%;
+  }
 }
 
 @media (max-width: 578px){
@@ -334,6 +348,10 @@ hr {
     top: 40px;
   }
 
+  .card {
+    transform: scale(0.9);
+    width: 100%;
+  }
 }
 
 @media (max-width: 376px) {

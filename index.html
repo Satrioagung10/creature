@@ -1,189 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Creature</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <title>Creature</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<nav class="sticky top-0">
-  <nav class="navbar">
-    <div class="navbar-container containers">
-      <div class="logo-gdsc">
-        <span class="logo"><a href="#"><img src="images/creaturelogo.svg" alt="" /></a></span>
+  <nav class="sticky top-0">
+    <nav class="navbar">
+      <div class="navbar-container containers">
+        <div class="logo-gdsc">
+          <span class="logo"
+            ><a href="#"><img src="images/creaturelogo.svg" alt="" /></a
+          ></span>
+        </div>
+        <input type="checkbox" name="checkbox" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items text-base md:text-lg">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <div class="relative">
+              <a id="dropdown" href="#"
+                >Layanan kami
+                <span id="arrow"
+                  ><i class="fas fa-angle-down ms-1" style="font-size: 18px"></i
+                ></span>
+              </a>
+              <ul
+                id="dropdown-content"
+                class="dropdown md:absolute pt-3 ps-7 md:py-4 md:ps-10 md:pe-20 text-lg"
+              >
+                <li class="dropdown-text">
+                  <a href="#">Web Development</a>
+                  <a href="#">Graphic Design</a>
+                  <a href="#">Logo Design</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#event">Project</a>
+          </li>
+          <li>
+            <a href="#FAQ">Contact</a>
+          </li>
+        </ul>
       </div>
-      <input type="checkbox" name="checkbox" id="" />
-      <div class="hamburger-lines">
-        <span class="line line1"></span>
-        <span class="line line2"></span>
-        <span class="line line3"></span>
-      </div>
-      <ul class="menu-items text-base md:text-lg">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <div class="relative">
-            <a id="dropdown" href="#">Layanan kami
-              <span id="arrow"><i class="fas fa-angle-down ms-1" style="font-size: 18px"></i></span>
-            </a>
-            <ul id="dropdown-content" class="dropdown md:absolute pt-3 ps-7 md:py-4 md:ps-10 md:pe-20 text-lg">
-              <li class="dropdown-text">
-                <a href="#">Web Development</a>
-                <a href="#">Graphic Design</a>
-                <a href="#">Logo Design</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a href="#event">Project</a>
-        </li>
-        <li>
-          <a href="#FAQ">Contact</a>
-        </li>
-      </ul>
-    </div>
+    </nav>
   </nav>
-</nav>
 
-<div class="whatsapp-float">
-  <div class="modals relative">
-    <div class="absolute popup w-max">
+  <div class="whatsapp-float">
+    <div class="modals relative">
+      <div class="absolute popup w-max">
+        <div class="header-popup bg-primary text-white p-7">
+          <h4>Punya Pertanyaan?</h4>
+          <p class="py-2 text-base">
+            Silahkan konsultasikan ke whatsapp ya <br />
+            klik kontak dibawah ini
+          </p>
+        </div>
 
-      <div class="header-popup bg-primary text-white p-7">
-        <h4>Punya Pertanyaan?</h4>
-        <p class="py-2 text-base">
-          Silahkan konsultasikan ke whatsapp ya <br />
-          klik kontak dibawah ini
+        <div class="content-popup flex items-center gap-7 px-7 py-10">
+          <div class="creature-logo">
+            <img src="images/icon-chat/creaturelogo.svg" alt="" />
+          </div>
+
+          <div class="support">
+            <p class="text-sm text-gray-500">Support</p>
+            <a href="#" class="font-semibold py-2 hover:text-primary"
+              >Chat Creature Studio</a
+            >
+          </div>
+        </div>
+
+        <div class="vector flex justify-end -mt-1.5 me-2">
+          <svg
+            width="44"
+            height="29"
+            viewBox="0 0 44 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0H44L22 29L0 0Z" fill="white" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="whatsapp">
+        <img src="images/icon-chat/whatsapp.svg" alt="whatsapp" />
+      </div>
+    </div>
+  </div>
+
+  <section id="home" class="pt-20">
+    <div class="containers mx-auto grid lg:grid-cols-2">
+      <div class="home-text">
+        <h3 class="text-primary creature-studio text-xl pt-8 lg:pt-0">
+          CREATURE STUDIO
+        </h3>
+        <h1
+          class="creature-title text-2xl md:text-4xl 2xl:text-5xl 2xl:leading-normal font-bold py-3 lg:py-5"
+        >
+          Membuat Segalanya Lebih Mudah Dengan Digital.
+        </h1>
+        <p class="creature-desc text-base md:text-lg py-3 lg:py-4">
+          Creature menyediakan layanan untuk mendukung perkembangan usaha Anda,
+          baik dalam transformasi digital maupun manual, melalui strategi,
+          pengembangan produk dan komunikasi kreatif.
         </p>
-      </div>
-
-      <div class="content-popup flex items-center gap-7 px-7 py-10">
-
-        <div class="creature-logo">
-          <img src="images/icon-chat/creaturelogo.svg" alt="" />
+        <div class="layanan flex gap-5 pt-5">
+          <button class="layanan-btn bg-primary py-2 px-4 md:py-3 lg:px-8">
+            Layanan Kami
+          </button>
+          <button
+            class="video flex items-center gap-3 py-2 px-4 md:py-3 lg:px-8"
+          >
+            <span
+              ><svg
+                class="play"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="play-fill"
+                  d="M10 0C15.5116 0 20 4.48625 20 10.0058C20 15.5137 15.5116 20 10 20C4.48842 20 0 15.5137 0 10.0058C0 4.48625 4.48842 0 10 0ZM8.861 6.02991C8.64865 6.02991 8.44595 6.07815 8.2529 6.17463C8.01158 6.3097 7.81853 6.52195 7.71236 6.77279C7.64479 6.94645 7.53861 7.46744 7.53861 7.47709C7.43243 8.04631 7.37452 8.9725 7.37452 9.99518C7.37452 10.9706 7.43243 11.8572 7.51931 12.4361C7.52896 12.4457 7.63514 13.0921 7.75097 13.314C7.96332 13.7192 8.37838 13.9701 8.82239 13.9701H8.861C9.15058 13.9604 9.75869 13.7096 9.75869 13.7C10.7819 13.2754 12.7992 11.9537 13.61 11.0757L13.668 11.0178C13.7741 10.9117 13.9093 10.7477 13.9382 10.7091C14.0927 10.5065 14.1699 10.2557 14.1699 10.0058C14.1699 9.72504 14.083 9.46454 13.9189 9.25229C13.8803 9.2137 13.7355 9.04969 13.6004 8.91462C12.8089 8.06561 10.7432 6.67631 9.66216 6.25181C9.49807 6.18524 9.08301 6.03956 8.861 6.02991Z"
+                  fill="#3D77F5"
+                />
+              </svg>
+            </span>
+            Watch Video
+          </button>
         </div>
-
-        <div class="support">
-          <p class="text-sm text-gray-500">Support</p>
-          <a href="#" class="font-semibold py-2 hover:text-primary">Chat Creature Studio</a>
-        </div>
-
       </div>
-      
-      <div class="vector flex justify-end -mt-1.5 me-2">
-        <svg width="44" height="29" viewBox="0 0 44 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0H44L22 29L0 0Z" fill="white" />
-        </svg>
+      <div class="home-img mx-auto -order-1 lg:order-1">
+        <img src="images/home.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section id="clients" class="pt-20">
+    <div class="grid md:grid-cols-2">
+      <div class="clients-img">
+        <img class="client" src="images/client.png" alt="" />
+      </div>
+      <div class="clients-content containers">
+        <h3 class="text-primary creature-studio text-xl pt-8 lg:pt-0">
+          OUR CLIENTS
+        </h3>
+        <h1
+          class="creature-title text-xl md:text-3xl 2xl:text-4xl 2xl:leading-normal font-bold pt-3 lg:pt-5"
+        >
+          Buat Website & Design Dengan Harga Yang Lebih Murah
+        </h1>
+        <p class="creature-desc text-base md:text-lg py-3 lg:py-4">
+          Solusi terbaik untuk industri kreatif dan pemasaran digital, meliputi
+          branding, pengembangan situs web, dan desain grafis
+        </p>
+        <div class="box flex flex-wrap lg:-ms-4">
+          <div
+            class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center"
+          >
+            <h1 class="text-primary text-3xl font-bold">1.100+</h1>
+            <h5 class="py-4 text-xl font-semibold">Clients</h5>
+          </div>
+          <div
+            class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center"
+          >
+            <h1 class="text-primary text-3xl font-bold">100</h1>
+            <h5 class="py-4 text-xl font-semibold">Projects</h5>
+          </div>
+          <div
+            class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center mt-2"
+          >
+            <h1 class="text-primary text-3xl font-bold">6</h1>
+            <h5 class="py-4 text-xl font-semibold">Team</h5>
+          </div>
+          <div
+            class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center mt-2"
+          >
+            <h1 class="text-primary text-3xl font-bold">25</h1>
+            <h5 class="py-4 text-xl font-semibold">Mentors</h5>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="whatsapp">
-      <img src="images/icon-chat/whatsapp.svg" alt="whatsapp" />
+    <!-- TABLET SHOW -->
+    <div class="box flex flex-wrap pt-10">
+      <div
+        class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden"
+      >
+        <h1 class="text-primary text-3xl font-bold">1.100+</h1>
+        <h5 class="py-4 text-xl font-semibold">Clients</h5>
+      </div>
+      <div
+        class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden"
+      >
+        <h1 class="text-primary text-3xl font-bold">100</h1>
+        <h5 class="py-4 text-xl font-semibold">Projects</h5>
+      </div>
+      <div
+        class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden"
+      >
+        <h1 class="text-primary text-3xl font-bold">6</h1>
+        <h5 class="py-4 text-xl font-semibold">Team</h5>
+      </div>
+      <div
+        class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden"
+      >
+        <h1 class="text-primary text-3xl font-bold">25</h1>
+        <h5 class="py-4 text-xl font-semibold">Mentors</h5>
+      </div>
     </div>
-  </div>
-</div>
+  </section>
+  <!--  -->
 
-<section id="home" class="pt-20">
-  <div class="containers mx-auto grid lg:grid-cols-2">
-    <div class="home-text">
-      <h3 class="text-primary creature-studio text-xl pt-8 lg:pt-0">
-        CREATURE STUDIO
-      </h3>
-      <h1 class="creature-title text-2xl md:text-4xl 2xl:text-5xl 2xl:leading-normal font-bold py-3 lg:py-5">
-        Membuat Segalanya Lebih Mudah Dengan Digital.
+  <section id="layanan" class="pt-10 md:py-20">
+    <div class="containers md:text-center">
+      <h3 class="text-primary creature-studio text-xl">LAYANAN KAMI</h3>
+      <h1
+        class="creature-title text-xl md:text-3xl 2xl:text-4xl 2xl:leading-normal font-bold py-3 lg:py-5"
+      >
+        Solusi Sempurna Untuk Bisnis Anda
       </h1>
-      <p class="creature-desc text-base md:text-lg py-3 lg:py-4">
-        Agensi kreatif dengan layanan lengkap yang membantu usaha anda dalam
-        transformasi digital & manual melalui strategi, pengembangan produk,
-        dan komunikasi kreatif.
+      <p class="layanan-desc text-lg md:w-3/5 m-auto">
+        Untuk membantu klien kami mencapai kesuksesan melalui inovasi digital
+        dan pemasaran digital mulai dari branding, pengembangan situs web, dan
+        desain grafis.
       </p>
-      <div class="layanan flex gap-5 pt-5">
-        <button class="layanan-btn bg-primary py-2 px-4 md:py-3 lg:px-8">
-          Layanan Kami
-        </button>
-        <button class="video flex items-center gap-3 py-2 px-4 md:py-3 lg:px-8">
-          <span><svg class="play" width="20" height="20" viewBox="0 0 20 20" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path class="play-fill"
-                d="M10 0C15.5116 0 20 4.48625 20 10.0058C20 15.5137 15.5116 20 10 20C4.48842 20 0 15.5137 0 10.0058C0 4.48625 4.48842 0 10 0ZM8.861 6.02991C8.64865 6.02991 8.44595 6.07815 8.2529 6.17463C8.01158 6.3097 7.81853 6.52195 7.71236 6.77279C7.64479 6.94645 7.53861 7.46744 7.53861 7.47709C7.43243 8.04631 7.37452 8.9725 7.37452 9.99518C7.37452 10.9706 7.43243 11.8572 7.51931 12.4361C7.52896 12.4457 7.63514 13.0921 7.75097 13.314C7.96332 13.7192 8.37838 13.9701 8.82239 13.9701H8.861C9.15058 13.9604 9.75869 13.7096 9.75869 13.7C10.7819 13.2754 12.7992 11.9537 13.61 11.0757L13.668 11.0178C13.7741 10.9117 13.9093 10.7477 13.9382 10.7091C14.0927 10.5065 14.1699 10.2557 14.1699 10.0058C14.1699 9.72504 14.083 9.46454 13.9189 9.25229C13.8803 9.2137 13.7355 9.04969 13.6004 8.91462C12.8089 8.06561 10.7432 6.67631 9.66216 6.25181C9.49807 6.18524 9.08301 6.03956 8.861 6.02991Z"
-                fill="#3D77F5" />
-            </svg>
-          </span>
-          Watch Video
-        </button>
-      </div>
-    </div>
-    <div class="home-img mx-auto -order-1 lg:order-1">
-      <img src="images/home.png" alt="" />
-    </div>
-  </div>
-</section>
 
-<section id="clients" class="py-20">
-  <div class="grid md:grid-cols-2">
-    <div class="clients-img">
-      <img class="client" src="images/client.png" alt="">
-    </div>
-    <div class="clients-content containers">
-      <h3 class="text-primary creature-studio text-xl pt-8 lg:pt-0">
-        OUR CLIENTS
-      </h3>
-      <h1 class="creature-title text-xl md:text-3xl 2xl:text-4xl 2xl:leading-normal font-bold py-3 lg:py-5">
-        Buat Website & Design Dengan Harga Yang Lebih Murah
-      </h1>
-      <p class="creature-desc text-base md:text-lg py-3 lg:py-4">
-        Membuat industri kreatif dan pemasaran digital mulai dari branding, pengembangan situs web, dan desain grafis dengan harga yang lebih murah.
-      </p>
-      <div class="box flex flex-wrap">
-        <div class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center">
-          <h1 class="text-primary text-3xl font-bold">1.100+</h1>
-          <h5 class="py-4 text-xl font-semibold">Clients</h5>
+      <div
+        class="card-section grid md:grid-cols-4 lg:grid-cols-3 place-items-center py-10 md:py-16 sm:gap-10"
+      >
+        <div class="card bg-white py-9 md:col-span-2 lg:col-auto">
+          <div class="web flex justify-center">
+            <img src="images/icon-card/web.svg" alt="" />
+          </div>
+          <h4
+            class="card-title text-center text-2xl 2xl:text-3xl font-bold py-3"
+          >
+            Web Development
+          </h4>
+          <p
+            class="card-desc font-normal text-lg text-center w-4/5 md:w-3/4 m-auto"
+          >
+            Menyediakan layanan pembuatan situs web dengan fitur terbaik untuk
+            mendukung bisnis Anda
+          </p>
+          <button
+            class="card-btn flex m-auto items-center bg-primary text-white gap-3 py-3 px-7 my-5"
+          >
+            All Details
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="13"
+                viewBox="0 0 14 13"
+                fill="none"
+              >
+                <path
+                  d="M13.0303 7.03033C13.3232 6.73744 13.3232 6.26256 13.0303 5.96967L8.25736 1.1967C7.96447 0.903806 7.48959 0.903806 7.1967 1.1967C6.90381 1.48959 6.90381 1.96447 7.1967 2.25736L11.4393 6.5L7.1967 10.7426C6.90381 11.0355 6.90381 11.5104 7.1967 11.8033C7.48959 12.0962 7.96447 12.0962 8.25736 11.8033L13.0303 7.03033ZM0.5 7.25H12.5V5.75H0.5V7.25Z"
+                  fill="#FAFAFA"
+                /></svg
+            ></span>
+          </button>
         </div>
-        <div class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center">
-          <h1 class="text-primary text-3xl font-bold">100</h1>
-          <h5 class="py-4 text-xl font-semibold">Projects</h5>
-        </div>        
-        <div class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center mt-2">
-          <h1 class="text-primary text-3xl font-bold">6</h1>
-          <h5 class="py-4 text-xl font-semibold">Team</h5>
-        </div>        
-        <div class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center mt-2">
-          <h1 class="text-primary text-3xl font-bold">25</h1>
-          <h5 class="py-4 text-xl font-semibold">Mentors</h5>
-        </div>        
+
+        <div class="card bg-white py-9 md:col-span-2 lg:col-auto">
+          <div class="design flex justify-center">
+            <img src="images/icon-card/graph-design.svg" alt="" />
+          </div>
+          <h4
+            class="card-title text-center text-2xl 2xl:text-3xl font-bold py-3"
+          >
+            Graphic Design
+          </h4>
+          <p
+            class="card-desc font-normal text-lg text-center w-4/5 md:w-3/4 m-auto"
+          >
+            Hadirkan sentuhan kreatif kami ke design anda membuatnya terlihat
+            lebih minimalis dan bagus
+          </p>
+          <button
+            class="card-btn flex m-auto items-center bg-primary text-white gap-3 py-3 px-7 my-5"
+          >
+            All Details
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="13"
+                viewBox="0 0 14 13"
+                fill="none"
+              >
+                <path
+                  d="M13.0303 7.03033C13.3232 6.73744 13.3232 6.26256 13.0303 5.96967L8.25736 1.1967C7.96447 0.903806 7.48959 0.903806 7.1967 1.1967C6.90381 1.48959 6.90381 1.96447 7.1967 2.25736L11.4393 6.5L7.1967 10.7426C6.90381 11.0355 6.90381 11.5104 7.1967 11.8033C7.48959 12.0962 7.96447 12.0962 8.25736 11.8033L13.0303 7.03033ZM0.5 7.25H12.5V5.75H0.5V7.25Z"
+                  fill="#FAFAFA"
+                /></svg
+            ></span>
+          </button>
+        </div>
+
+        <div
+          class="card bg-white py-9 md:col-span-4 lg:col-auto md:w-1/2 lg:w-full"
+        >
+          <div class="logo-design flex justify-center">
+            <img src="images/icon-card/logo-design.svg" alt="" />
+          </div>
+          <h4
+            class="card-title text-center text-2xl 2xl:text-3xl font-bold py-3"
+          >
+            Logo Design
+          </h4>
+          <p
+            class="card-desc font-normal text-lg text-center w-4/5 md:w-3/4 m-auto"
+          >
+            Tingkatkan branding logo anda dengan menunjukkan identitas brand
+            untuk mudah dikenali
+          </p>
+          <button
+            class="card-btn flex m-auto items-center bg-primary text-white gap-3 py-3 px-7 my-5"
+          >
+            All Details
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="13"
+                viewBox="0 0 14 13"
+                fill="none"
+              >
+                <path
+                  d="M13.0303 7.03033C13.3232 6.73744 13.3232 6.26256 13.0303 5.96967L8.25736 1.1967C7.96447 0.903806 7.48959 0.903806 7.1967 1.1967C6.90381 1.48959 6.90381 1.96447 7.1967 2.25736L11.4393 6.5L7.1967 10.7426C6.90381 11.0355 6.90381 11.5104 7.1967 11.8033C7.48959 12.0962 7.96447 12.0962 8.25736 11.8033L13.0303 7.03033ZM0.5 7.25H12.5V5.75H0.5V7.25Z"
+                  fill="#FAFAFA"
+                /></svg
+            ></span>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="box flex flex-wrap pt-10">
-    <div class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden">
-      <h1 class="text-primary text-3xl font-bold">1.100+</h1>
-      <h5 class="py-4 text-xl font-semibold">Clients</h5>
-    </div>
-    <div class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden">
-      <h1 class="text-primary text-3xl font-bold">100</h1>
-      <h5 class="py-4 text-xl font-semibold">Projects</h5>
-    </div>        
-    <div class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden">
-      <h1 class="text-primary text-3xl font-bold">6</h1>
-      <h5 class="py-4 text-xl font-semibold">Team</h5>
-    </div>        
-    <div class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden">
-      <h1 class="text-primary text-3xl font-bold">25</h1>
-      <h5 class="py-4 text-xl font-semibold">Mentors</h5>
-    </div>        
-  </div>
-</section>
-
-<body>
-  <script src="main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script>
-</body>
-
+  <body>
+    <script src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
