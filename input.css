@@ -30,12 +30,16 @@ body {
   margin: auto;
 }
 
+#navbar {
+  transition: 0.3s;
+}
+
 .navbar {
   width: 100%;
   background-color: #F6F8FD;
   z-index: 1000;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+
 }
 
 .navbar-container {
@@ -185,6 +189,9 @@ hr {
   z-index: -100;
 }
 
+.card-section {
+  align-items: stretch;
+}
 
 .card {
   border-radius: 10px;
@@ -211,6 +218,10 @@ hr {
 
  .clients-img {
   height: fit-content;
+ }
+
+ .whatsapp-float {
+  bottom: 5%;
  }
 
 }
