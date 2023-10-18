@@ -165,6 +165,7 @@ hr {
   border-radius: 20px;
   box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.02), 0px 36px 36px 0px rgba(0, 0, 0, 0.02), 0px 80px 48px 0px rgba(0, 0, 0, 0.01), 0px 143px 57px 0px rgba(0, 0, 0, 0.00), 0px 223px 63px 0px rgba(0, 0, 0, 0.00);
   transform: scale(0.9);
+  z-index: -100;
 }
 
 .card {
