@@ -1161,6 +1161,10 @@ hr {
   .dropdown {
     top: 40px;
   }
+
+  .bi-whatsapp, .bi-x {
+    margin-top: 6px !important;
+  }
 }
 
 @media (max-width: 376px) {

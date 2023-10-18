@@ -380,6 +380,10 @@ hr {
     top: 40px;
   }
 
+  .bi-whatsapp, .bi-x {
+    margin-top: 6px !important;
+  }
+
 
 }
 
