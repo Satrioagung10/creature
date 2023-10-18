@@ -586,6 +586,10 @@ video {
           margin-inline-start: 0.25rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -799,6 +803,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #F6F8FD;
+  height: 5000px;
 }
 
 .navbar input[type="checkbox"],
@@ -884,6 +889,14 @@ hr {
   z-index: 1000;
 }
 
+.whatsapp {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
 .creature-studio {
   letter-spacing: 4.6px;
   font-family: 'Poppins', sans-serif;
@@ -920,7 +933,7 @@ hr {
 
 .popup {
   bottom: 110%;
-  right: 0;
+  right: -10%;
   cursor: default;
   display: none;
   animation: fadeInAnimation ease 0.5s;
@@ -933,6 +946,14 @@ hr {
 .content-popup {
   background-color: white;
   border-radius: 0px 0px 10px 10px;
+}
+
+.bi-whatsapp {
+  animation: fadeInAnimation ease 0.5s;
+}
+
+.bi-x {
+  animation: fadeInAnimation ease 0.5s;
 }
 
 @keyframes fadeInAnimation {
@@ -955,11 +976,15 @@ hr {
 .card {
   border-radius: 10px;
   box-shadow: 3px 8px 19px 0px rgba(0, 0, 0, 0.04), 14px 32px 35px 0px rgba(0, 0, 0, 0.03), 31px 72px 47px 0px rgba(0, 0, 0, 0.02), 54px 128px 56px 0px rgba(0, 0, 0, 0.01), 85px 200px 61px 0px rgba(0, 0, 0, 0.00);
-  z-index: -100;
 }
 
 .card-btn {
   border-radius: 10px;
+}
+
+.card-btn:hover {
+  transform: scale(0.95);
+  transition: transform 0.1s ease-in-out;
 }
 
 @media (max-width: 1280px) {
@@ -1037,7 +1062,7 @@ hr {
 
   .navbar .menu-items {
     position: absolute;
-    top: 80px;
+    top: 65px;
     padding: 40px 40px 10px;
     height: -moz-fit-content;
     height: fit-content;
@@ -1052,6 +1077,7 @@ hr {
     margin-bottom: 1.8rem;
     font-size: 1.1rem;
     font-weight: 500;
+    padding-top: 10px;
   }
 
   .logo {
@@ -1087,8 +1113,16 @@ hr {
     bottom: 3%;
   }
 
+  .whatsapp {
+    transform: scale(1.1);
+  }
+
+  .card-section {
+    gap: 1.5rem;
+  }
+
   .card {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -1126,11 +1160,6 @@ hr {
 
   .dropdown {
     top: 40px;
-  }
-
-  .card {
-    transform: scale(0.9);
-    width: 100%;
   }
 }
 

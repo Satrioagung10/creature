@@ -21,11 +21,11 @@ $(document).ready(function() {
 
         if ($('.popup').css('display') === 'none') {
             $('.whatsapp').html(
-                '<img src="images/icon-chat/close.svg" alt="whatsapp">');
+                '<i class="bi bi-x" style="font-size:33px;"></i>');
             $('.popup').css('display', 'block');
         } else {
             $('.whatsapp').html(
-                '<img src="images/icon-chat/whatsapp.svg" alt="whatsapp">');
+                '<i class="bi bi-whatsapp mt-1" style="font-size: 25px;"></i>');
             $('.popup').css('display', 'none');
         }
     });
