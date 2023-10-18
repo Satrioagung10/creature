@@ -803,7 +803,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #F6F8FD;
-  height: 5000px;
 }
 
 .navbar input[type="checkbox"],
@@ -1162,7 +1161,7 @@ hr {
     top: 40px;
   }
 
-  .bi-whatsapp, .bi-x {
+  .bi-whatsapp {
     margin-top: 6px !important;
   }
 }
