@@ -1367,7 +1367,7 @@ body {
   }
 }
 
-@media (min-width: 991.98px) {
+@media (min-width: 991px) {
   .lg\:order-1 {
     order: 1;
   }
@@ -1402,10 +1402,6 @@ body {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:justify-center {
-    justify-content: center;
   }
 
   .lg\:gap-20 {
