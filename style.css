@@ -1309,6 +1309,10 @@ body {
     flex-direction: row;
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:gap-6 {
     gap: 1.5rem;
   }
@@ -1363,7 +1367,7 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 991.98px) {
   .lg\:order-1 {
     order: 1;
   }
