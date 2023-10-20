@@ -1367,7 +1367,7 @@ body {
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 945px) {
   .lg\:order-1 {
     order: 1;
   }
