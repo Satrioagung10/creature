@@ -7,10 +7,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="shortcut icon" href="images/icon-web.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icon-web.svg" type="image/x-icon" />
     <title>Creature</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
 
@@ -53,7 +56,7 @@
             </div>
           </li>
           <li>
-            <a href="#event">Project</a>
+            <a href="#project">Project</a>
           </li>
           <li>
             <a href="#FAQ">Contact</a>
@@ -101,7 +104,7 @@
       </div>
 
       <div class="whatsapp flex justify-center">
-        <i class="bi bi-whatsapp mt-1" style="font-size: 25px;"></i>
+        <i class="bi bi-whatsapp mt-1" style="font-size: 25px"></i>
       </div>
     </div>
   </div>
@@ -123,9 +126,11 @@
           pengembangan produk dan komunikasi kreatif.
         </p>
         <div class="layanan flex gap-5 pt-5">
-          <button class="layanan-btn bg-primary py-2 px-4 md:py-3 lg:px-8">
-            Layanan Kami
-          </button>
+          <a href="#layanan"
+            ><button class="layanan-btn bg-primary py-2 px-4 md:py-3 lg:px-8">
+              Layanan Kami
+            </button>
+          </a>
           <button
             class="video flex items-center gap-3 py-2 px-4 md:py-3 lg:px-8"
           >
@@ -232,7 +237,7 @@
   </section>
   <!--  -->
 
-  <section id="layanan" class="pt-10 md:py-20">
+  <section id="layanan" class="pt-20">
     <div class="containers md:text-center">
       <h3 class="text-primary creature-studio text-xl">LAYANAN KAMI</h3>
       <h1
@@ -240,7 +245,7 @@
       >
         Solusi Sempurna Untuk Bisnis Anda
       </h1>
-      <p class="layanan-desc text-lg md:w-3/5 m-auto">
+      <p class="layanan-desc text-lg lg:w-3/5 m-auto">
         Untuk membantu klien kami mencapai kesuksesan melalui inovasi digital
         dan pemasaran digital mulai dari branding, pengembangan situs web, dan
         desain grafis.
@@ -297,7 +302,7 @@
             class="card-desc font-normal text-lg text-center w-4/5 md:w-3/4 m-auto"
           >
             Hadirkan sentuhan kreatif kami ke design anda membuatnya terlihat
-            lebih minimalis dan bagus
+            lebih menarik
           </p>
           <button
             class="card-btn flex m-auto items-center bg-primary text-white gap-3 py-3 px-7 my-5"
@@ -319,7 +324,8 @@
           </button>
         </div>
 
-        <div class="card bg-white py-9 md:col-span-4 lg:col-auto md:w-1/2 lg:w-full"
+        <div
+          class="card bg-white py-9 md:col-span-4 lg:col-auto md:w-1/2 lg:w-full"
         >
           <div class="logo-design flex justify-center">
             <img src="images/icon-card/logo-design.svg" alt="" />
@@ -354,6 +360,47 @@
             ></span>
           </button>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="project" class="pt-20 md:py-14">
+    <div class="containers md:text-center">
+      <h3 class="text-primary creature-studio text-xl text-center">PROJECT</h3>
+      <h1
+        class="creature-title text-center text-xl md:text-3xl 2xl:text-4xl 2xl:leading-normal font-bold py-3 lg:py-5"
+      >
+      Selected Our Projects
+      </h1>
+      <div class="project-nav pt-10">
+        <ul class="project-ul">
+          <li
+            class="project-content flex flex-wrap justify-center font-semibold gap-3 lg:gap-20 text-lg"
+          >
+            <a class="text-base md:text-lg" id="web">WEB DEVELOPMENT</a>
+            <a class="text-base md:text-lg" id="graphic">GRAPHIC DESIGN</a>
+            <a class="text-base md:text-lg" id="logo">LOGO DESIGN</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content my-10 md:my-20" id="content">      
+        <div class="img-line1 flex flex-col md:flex-row justify-center gap-5">
+          <div class="img-1">
+            <img src="https://media.discordapp.net/attachments/387127158935388160/1164988166130909284/img-1.png?ex=654536c7&is=6532c1c7&hm=f208fcff5c6132b0855e84b2300b0c68940af877f875737f2762a86c9b5ce48e&=&width=768&height=448" alt="">
+          </div>
+          <div class="img-2 flex flex-col gap-5">
+            <img src="https://media.discordapp.net/attachments/387127158935388160/1164988476056412350/img-2.png?ex=65453711&is=6532c211&hm=62bd2d8672b5f8b7b4421ee7bd06c5ebab1e13c4cd272c377481280a2bfb5a30&=&width=356&height=215" alt="">
+            <img src="https://media.discordapp.net/attachments/387127158935388160/1164988476333232188/img-3.png?ex=65453711&is=6532c211&hm=0d731404277a744835f099a15424295ec65ba6e300a16e245e0becae143cee23&=&width=356&height=208" alt="">
+          </div>
+        </div>
+
+        <div class="img-line2 flex lg:justify-center mt-5 gap-4 md:gap-6 lg:gap-8">
+          <img class="hidden md:block" src="https://media.discordapp.net/attachments/387127158935388160/1164988476580708372/img-4.png?ex=65453711&is=6532c211&hm=a731ff30aa323996afc679980f1e9584ffb926511a9a105ff6cd76de82f74251&=&width=256&height=287" alt="">
+          <img class="hidden md:block" src="https://media.discordapp.net/attachments/387127158935388160/1164988476815593522/img-5.png?ex=65453711&is=6532c211&hm=a7ed12ba49be1e68e4cb1b4afe30b0d62b92d863cce3295457756f7c0a4fc4ec&=&width=256&height=287" alt="">
+          <img class="hidden md:block" src="https://media.discordapp.net/attachments/387127158935388160/1164988477092401162/img-6.png?ex=65453711&is=6532c211&hm=26bfa0b2bf682a7d593fdb3aed1b94ab7a6c2c86a8d8482623846903b017dc42&=&width=256&height=287" alt="">
+          <img class="hidden lg:block" src="https://media.discordapp.net/attachments/387127158935388160/1164988477377626273/img-7.png?ex=65453711&is=6532c211&hm=7db6d120126df9e179fcf5642088fb330476fb8ce432a4e7640ff025c91e1d35&=&width=256&height=287" alt="">
+        </div>       
       </div>
     </div>
   </section>

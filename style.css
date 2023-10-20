@@ -563,6 +563,11 @@ video {
   margin-right: auto;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -594,6 +599,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -623,6 +632,10 @@ video {
   cursor: pointer;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -645,6 +658,10 @@ video {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-5 {
@@ -884,10 +901,6 @@ body {
   color: grey;
 }
 
-hr {
-  border: 0.1px solid rgba(0, 0, 0, 0.405);
-}
-
 .whatsapp-float {
   position: fixed;
   bottom: 10%;
@@ -996,6 +1009,18 @@ hr {
 .card-btn:hover {
   transform: scale(0.95);
   transition: transform 0.1s ease-in-out;
+}
+
+.project-content a {
+  padding: 8px 25px;
+  cursor: pointer;
+}
+
+.active-project-content{
+  border-radius: 100px;
+  border: 1px solid white;
+  color: white;
+  background-color: rgb(62, 92, 155);
 }
 
 @media (max-width: 1280px) {
@@ -1182,6 +1207,11 @@ hr {
   .bi-whatsapp {
     margin-top: 6px !important;
   }
+
+  .content-project {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 @media (max-width: 376px) {
@@ -1192,6 +1222,10 @@ hr {
   .whatsapp-float {
     right: 5%;
     transform: scale(0.9);
+  }
+
+  .project-content a {
+    font-size: 14px;
   }
 }
 
@@ -1242,6 +1276,11 @@ hr {
     grid-column: span 4 / span 4;
   }
 
+  .md\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1258,10 +1297,6 @@ hr {
     width: 75%;
   }
 
-  .md\:w-3\/5 {
-    width: 60%;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1270,14 +1305,22 @@ hr {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-
-  .md\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .md\:py-3 {
@@ -1341,6 +1384,10 @@ hr {
     display: none;
   }
 
+  .lg\:w-3\/5 {
+    width: 60%;
+  }
+
   .lg\:w-full {
     width: 100%;
   }
@@ -1351,6 +1398,18 @@ hr {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:px-8 {

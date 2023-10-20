@@ -93,9 +93,6 @@ body {
   color: grey;
 }
 
-hr {
-  border: 0.1px solid rgba(0, 0, 0, 0.405);
-}
 
 .whatsapp-float {
   position: fixed;
@@ -207,6 +204,20 @@ hr {
   transition: transform 0.1s ease-in-out;
 }
 
+.project-content a {
+  padding: 8px 25px;
+  cursor: pointer;
+}
+
+.active-project-content{
+  border-radius: 100px;
+  border: 1px solid white;
+  color: white;
+  background-color: rgb(62, 92, 155);
+}
+
+
+
 @media (max-width: 1280px) {
 
 }
@@ -223,6 +234,7 @@ hr {
  .whatsapp-float {
   bottom: 5%;
  }
+
 
 }
 
@@ -396,6 +408,11 @@ hr {
     margin-top: 6px !important;
   }
 
+  .content-project {
+    width: 90%;
+    margin: auto;
+  }
+  
 
 }
 
@@ -407,6 +424,10 @@ hr {
   .whatsapp-float {
     right: 5%;
     transform: scale(0.9);
+  }
+
+  .project-content a {
+    font-size: 14px;
   }
 }
 
