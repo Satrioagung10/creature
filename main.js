@@ -63,7 +63,7 @@ $(document).ready(function () {
       </div>
     </div>
 
-    <div class="img-line2 flex lg:justify-center mt-5 gap-4 md:gap-6 lg:gap-8">
+    <div class="img-line2 flex sm:justify-center mt-5 gap-4 md:gap-6 lg:gap-8">
       <img class="hidden md:block" src="https://media.discordapp.net/attachments/387127158935388160/1164989164031324160/img2-4.png?ex=654537b5&is=6532c2b5&hm=5b9a67cf6ced3da049da7348f6b76a7b3b82dccbd96d84b7ddb5bdabde0e4508&=&width=256&height=287" alt="4">
       <img class="hidden md:block" src="https://media.discordapp.net/attachments/387127158935388160/1164989164551409736/img2-5.png?ex=654537b5&is=6532c2b5&hm=3a59619ebaa01a0a0cf75cd410dd5517994f263e4e3751013e73caa948ee2fe1&=&width=256&height=287" alt="5">
       <img class="hidden md:block" src="https://media.discordapp.net/attachments/387127158935388160/1164989165000212621/img2-6.png?ex=654537b5&is=6532c2b5&hm=aaab96b7ab40be51007b63a9fe668f691c908836fb860d0d92758a10c89d38c9&=&width=256&height=287" alt="6">

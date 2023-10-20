@@ -976,6 +976,10 @@ body {
   animation: fadeInAnimation ease 0.5s;
 }
 
+.img-line1, .img-line2 {
+  animation: fadeInAnimation ease 0.5s;
+}
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -1311,10 +1315,6 @@ body {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:justify-center {
-    justify-content: center;
   }
 
   .md\:gap-6 {
