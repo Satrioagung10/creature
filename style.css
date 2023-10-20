@@ -628,6 +628,14 @@ video {
   width: max-content;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -672,6 +680,10 @@ video {
   gap: 1.75rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(64 123 255 / var(--tw-bg-opacity));
@@ -682,12 +694,21 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-7 {
   padding: 1.75rem;
 }
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-4 {
@@ -923,14 +944,13 @@ body {
 }
 
 .layanan-btn {
-  color: white;
   border-radius: 10px;
   border: 1px solid var(--primary-color);
 }
 
 .layanan-btn:hover {
-  background-color: white;
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .video {
@@ -1025,6 +1045,30 @@ body {
   border: 1px solid white;
   color: white;
   background-color: rgb(62, 92, 155);
+}
+
+.btn-contact {
+  border-radius: 10px;
+  border: 1px solid #FFF;
+}
+
+.btn-contact:hover {
+  .envelope {
+    fill: #3D77F5;
+  }
+}
+
+.btn-contact-parent {
+  position: relative;
+}
+
+.dots-title {
+  left: 1rem;
+}
+
+.dots {
+  right: 0;
+  bottom: 2rem;
 }
 
 @media (max-width: 1280px) {
@@ -1256,6 +1300,11 @@ body {
   }
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(64 123 255 / var(--tw-text-opacity));
@@ -1317,6 +1366,10 @@ body {
     flex-direction: row;
   }
 
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .md\:gap-6 {
     gap: 1.5rem;
   }
@@ -1329,6 +1382,11 @@ body {
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:py-3 {
@@ -1367,6 +1425,11 @@ body {
 
   .md\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
@@ -1414,6 +1477,15 @@ body {
 
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:p-14 {
+    padding: 3.5rem;
+  }
+
+  .lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .lg\:px-8 {

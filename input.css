@@ -116,14 +116,13 @@ body {
 }
 
 .layanan-btn {
-  color: white;
   border-radius: 10px;
   border: 1px solid var(--primary-color);
 }
 
 .layanan-btn:hover {
-  background-color: white;
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .video {
@@ -220,7 +219,29 @@ body {
   background-color: rgb(62, 92, 155);
 }
 
+.btn-contact {
+  border-radius: 10px;
+  border: 1px solid #FFF;
+}
 
+.btn-contact:hover {
+  .envelope {
+    fill: #3D77F5;
+  }
+}
+
+.btn-contact-parent {
+  position: relative;
+}
+
+.dots-title {
+  left: 1rem;
+}
+
+.dots {
+  right: 0;
+  bottom: 2rem;
+}
 
 @media (max-width: 1280px) {
 
