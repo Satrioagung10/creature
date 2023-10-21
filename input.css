@@ -128,19 +128,20 @@ body {
 .video {
   border: 1px solid var(--primary-color);
   border-radius: 10px;
-  color: var(--primary-color);
+  color: white;
+  background-color: var(--primary-color);
 }
 
 .video:hover {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: white;
+  color: var(--primary-color);
   .play-fill {
-    fill: white;
+    fill: #3D77F5;
   }
 }
 
 .play-fill {
-  fill: #3D77F5;
+  fill: white;
 }
 
 .popup {
@@ -230,17 +231,47 @@ body {
   }
 }
 
-.btn-contact-parent {
-  position: relative;
-}
-
 .dots-title {
   left: 1rem;
 }
 
 .dots {
   right: 0;
-  bottom: 2rem;
+  bottom: -3rem;
+}
+
+.footer > h3 > a {
+  text-decoration: underline;
+}
+
+#modal {
+  display: none;
+}
+
+.modal-project {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.467);
+  backdrop-filter: blur(10px);
+}
+
+.isi-modal {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-50%,0);
 }
 
 @media (max-width: 1280px) {
