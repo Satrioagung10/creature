@@ -206,6 +206,10 @@ function newWindow(url) {
   window.open(url, "_blank");
 }
 
+function newEmail(url) {
+  window.open(url, "_blank");
+}
+
 $(document).ready(function () {
   const modal = $("#modal");
   const isi_modal = $("#isi-modal");
