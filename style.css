@@ -550,6 +550,10 @@ video {
   top: 0px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .-order-1 {
   order: -1;
 }
@@ -881,9 +885,6 @@ body {
 .navbar {
   width: 100%;
   background-color: #F6F8FD;
-  z-index: 1000;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
 }
 
 .navbar-container {
@@ -1120,7 +1121,7 @@ body {
   transform: translate(-50%,0);
 }
 
-.img-line1 img, .img-line2 img {
+:is(.img-line1 img, .img-line2 img){
   filter: grayscale(1);
 }
 

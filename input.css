@@ -37,9 +37,6 @@ body {
 .navbar {
   width: 100%;
   background-color: #F6F8FD;
-  z-index: 1000;
-  backdrop-filter: blur(10px);
-
 }
 
 .navbar-container {
@@ -274,10 +271,9 @@ body {
   transform: translate(-50%,0);
 }
 
-.img-line1 img, .img-line2 img {
+:is(.img-line1 img, .img-line2 img){
   filter: grayscale(1);
 }
-
 :is(.img-line1 img, .img-line2 img):hover{
   filter: grayscale(0);
   transition: filter 0.2s ease-in;
