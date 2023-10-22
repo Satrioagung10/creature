@@ -1,17 +1,18 @@
 $(document).ready(function () {
-  $("#dropdown").click(function () {
-    if ($("#dropdown-content").css("display") === "none") {
-      $("#dropdown-content").css("display", "block");
-      $("#arrow").html(
-        '<i class="fas fa-angle-up ms-1" style="font-size:18px"></i>'
-      );
-    } else {
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest('#dropdown').length) {
       $("#dropdown-content").css("display", "none");
-      $("#arrow").html(
-        '<i class="fas fa-angle-down ms-1" style="font-size:18px"></i>'
-      );
     }
   });
+  
+
+  $("#dropdown").click(function () {
+    $("#dropdown-content").toggle(); 
+    $("#arrow i").toggleClass("fa-angle-up fa-angle-down");
+  });
+  
+
 
   $(".whatsapp").click(function () {
     if ($(".popup").css("display") === "none") {

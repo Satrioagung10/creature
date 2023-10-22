@@ -966,27 +966,27 @@ body {
 }
 
 .layanan-btn:hover {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: #F6F8FD;
+  border: 1px solid grey;
+  color: grey;
 }
 
 .video {
   border: 1px solid var(--primary-color);
   border-radius: 10px;
-  color: white;
-  background-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .video:hover {
-  background-color: white;
-  color: var(--primary-color);
+  border: 1px solid grey;
+  color: grey;
   .play-fill {
-    fill: #3D77F5;
+    fill: grey;
   }
 }
 
 .play-fill {
-  fill: white;
+  fill: var(--primary-color);
 }
 
 .popup {
@@ -1082,7 +1082,7 @@ body {
 
 .dots {
   right: 0;
-  bottom: -3rem;
+  top: 8rem;
 }
 
 .footer > h3 > a {
@@ -1118,6 +1118,15 @@ body {
   right: 0;
   top: 0;
   transform: translate(-50%,0);
+}
+
+.img-line1 img, .img-line2 img {
+  filter: grayscale(1);
+}
+
+:is(.img-line1 img, .img-line2 img):hover{
+  filter: grayscale(0);
+  transition: filter 0.2s ease-in;
 }
 
 @media (max-width: 1280px) {
