@@ -611,6 +611,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -792,6 +796,18 @@ video {
   padding-top: 2rem;
 }
 
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -905,7 +921,7 @@ body {
   margin-left: 1.5rem;
 }
 
-.navbar a {
+:is(.navbar a, .btn-dropdown) {
   color: black;
   text-decoration: none;
   font-weight: 500;
@@ -913,7 +929,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.navbar a:hover {
+:is(.navbar a, .btn-dropdown):hover {
   color: #3D77F5;
 }
 

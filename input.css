@@ -57,7 +57,7 @@ body {
   margin-left: 1.5rem;
 }
 
-.navbar a {
+:is(.navbar a, .btn-dropdown) {
   color: black;
   text-decoration: none;
   font-weight: 500;
@@ -65,7 +65,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.navbar a:hover {
+:is(.navbar a, .btn-dropdown):hover {
   color: #3D77F5;
 }
 
