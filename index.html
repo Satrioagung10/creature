@@ -16,443 +16,460 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
-
-  <nav class="sticky top-0 z-10" id="navbar">
-    <nav class="navbar">
-      <div class="navbar-container containers">
-        <div class="logo-gdsc">
-          <span class="logo"
-            ><a href="#"><img src="images/creaturelogo.svg" alt="logo" /></a
-          ></span>
+  <body id="home">
+    <nav class="sticky top-0 z-10" id="navbar">
+      <nav class="navbar">
+        <div class="navbar-container containers">
+          <div class="logo-gdsc">
+            <span class="logo"
+              ><a href="#home"
+                ><img src="images/creaturelogo.svg" alt="logo" /></a
+            ></span>
+          </div>
+          <input type="checkbox" name="checkbox" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <ul class="menu-items text-base md:text-lg">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <div class="relative">
+                <a href="javascript:void(0)" id="dropdown" class="cursor-pointer"
+                  >Our Services
+                  <span id="arrow"
+                    ><i
+                      class="fas fa-angle-down ms-1"
+                      style="font-size: 18px"
+                    ></i
+                  ></span>
+                </a>
+                <ul
+                  id="dropdown-content"
+                  class="dropdown md:absolute pt-3 ps-7 md:py-4 md:ps-10 md:pe-20 text-lg"
+                >
+                  <li class="dropdown-text">
+                    <a href="web.html">Web Development</a>
+                    <a href="#">Graphic Design</a>
+                    <a href="#">Logo Design</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#project">Project</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <input type="checkbox" name="checkbox" id="" />
-        <div class="hamburger-lines">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
-        </div>
-        <ul class="menu-items text-base md:text-lg">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <div class="relative">
-              <a id="dropdown" class="cursor-pointer"
-                >Our Services
-                <span id="arrow"
-                  ><i class="fas fa-angle-down ms-1" style="font-size: 18px"></i
-                ></span>
-              </a>
-              <ul
-                id="dropdown-content"
-                class="dropdown md:absolute pt-3 ps-7 md:py-4 md:ps-10 md:pe-20 text-lg"
-              >
-                <li class="dropdown-text">
-                  <a href="#">Web Development</a>
-                  <a href="#">Graphic Design</a>
-                  <a href="#">Logo Design</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#project">Project</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+      </nav>
     </nav>
-  </nav>
 
-  <div class="whatsapp-float">
-    <div class="modals relative">
-      <div class="absolute popup w-max">
-        <div class="header-popup bg-primary text-white p-7">
-          <h4 class="font-bold text-lg">Punya Pertanyaan?</h4>
-          <p class="py-2 text-base">
-            Silahkan konsultasikan ke whatsapp ya <br />
-            klik kontak dibawah ini
-          </p>
-        </div>
-
-        <div class="content-popup flex items-center gap-7 px-7 py-10">
-          <div class="creature-logo">
-            <img src="images/icon-chat/creaturelogo.svg" alt="logo" />
+    <div class="whatsapp-float">
+      <div class="modals relative">
+        <div class="absolute popup w-max">
+          <div class="header-popup bg-primary text-white p-7">
+            <h4 class="font-bold text-lg">Punya Pertanyaan?</h4>
+            <p class="py-2 text-base">
+              Silahkan konsultasikan ke whatsapp ya <br />
+              klik kontak dibawah ini
+            </p>
           </div>
 
-          <div class="support">
-            <p class="text-sm text-gray-500">Support</p>
-            <a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B628987061371&text&type=phone_number&app_absent=0" class="font-semibold py-2 hover:text-primary"
-              >Chat Creature Studio</a
+          <div class="content-popup flex items-center gap-7 px-7 py-10">
+            <div class="creature-logo">
+              <img src="images/icon-chat/creaturelogo.svg" alt="logo" />
+            </div>
+
+            <div class="support">
+              <p class="text-sm text-gray-500">Support</p>
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send/?phone=%2B628987061371&text&type=phone_number&app_absent=0"
+                class="font-semibold py-2 hover:text-primary"
+                >Chat Creature Studio</a
+              >
+            </div>
+          </div>
+
+          <div class="vector flex justify-end -mt-1.5 me-2">
+            <svg
+              width="44"
+              height="29"
+              viewBox="0 0 44 29"
+              fill="none"
+              xmlns="https://www.w3.org/2000/svg"
             >
+              <path d="M0 0H44L22 29L0 0Z" fill="white" />
+            </svg>
           </div>
         </div>
 
-        <div class="vector flex justify-end -mt-1.5 me-2">
-          <svg
-            width="44"
-            height="29"
-            viewBox="0 0 44 29"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0 0H44L22 29L0 0Z" fill="white" />
-          </svg>
+        <div class="whatsapp flex justify-center">
+          <i class="bi bi-whatsapp mt-1" style="font-size: 25px"></i>
         </div>
       </div>
-
-      <div class="whatsapp flex justify-center">
-        <i class="bi bi-whatsapp mt-1" style="font-size: 25px"></i>
-      </div>
     </div>
-  </div>
 
-  <section id="modal">
-    <div class="modal-project">
-      <div class="isi-modal" id="isi-modal"></div>
-      <div class="close">
-        <button id="close"><i class="bi bi-x-circle-fill text-white" style="font-size: 48px;"></i></button>
+    <section id="modal">
+      <div class="modal-project">
+        <div class="isi-modal" id="isi-modal"></div>
+        <div class="close">
+          <button id="close">
+            <i
+              class="bi bi-x-circle-fill text-white"
+              style="font-size: 48px"
+            ></i>
+          </button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="home" class="pt-20">
-    <div class="containers mx-auto grid lg:grid-cols-2">
-      <div class="home-text">
-        <h3 class="text-primary creature-studio text-xl pt-8 lg:pt-0">
-          CREATURE STUDIO
-        </h3>
-        <h1
-          class="creature-title text-2xl md:text-4xl 2xl:text-5xl 2xl:leading-normal font-bold py-3 lg:py-5"
-        >
-          Membuat Segalanya Lebih Mudah Dengan Digital.
-        </h1>
-        <p class="creature-desc text-base md:text-lg py-3 lg:py-4">
-          Creature menyediakan layanan untuk mendukung perkembangan usaha Anda,
-          baik dalam transformasi digital maupun manual, melalui strategi,
-          pengembangan produk dan komunikasi kreatif.
-        </p>
-        <div class="layanan flex gap-5 pt-5">
-          <a href="#layanan"
-            ><button
-              class="layanan-btn bg-primary text-white py-2 px-4 md:py-3 lg:px-8"
+    <section id="landing" class="pt-20">
+      <div class="containers mx-auto grid lg:grid-cols-2">
+        <div class="home-text">
+          <h3 class="text-primary creature-studio text-xl pt-8 lg:pt-0">
+            CREATURE STUDIO
+          </h3>
+          <h1
+            class="creature-title text-2xl md:text-4xl 2xl:text-5xl 2xl:leading-normal font-bold py-3 lg:py-5"
+          >
+            Membuat Segalanya Lebih Mudah Dengan Digital.
+          </h1>
+          <p class="creature-desc text-base md:text-lg py-3 lg:py-4">
+            Creature menyediakan layanan untuk mendukung perkembangan usaha
+            Anda, baik dalam transformasi digital maupun manual, melalui
+            strategi, pengembangan produk dan komunikasi kreatif.
+          </p>
+          <div class="layanan flex gap-5 pt-5">
+            <a href="#layanan"
+              ><button
+                class="layanan-btn bg-primary text-white py-2 px-4 md:py-3 lg:px-8"
+              >
+                Layanan Kami
+              </button>
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=FFrdoc7Gn_g"
+              target="_blank"
             >
-              Layanan Kami
-            </button>
-          </a>
-          <a href="https://www.youtube.com/watch?v=FFrdoc7Gn_g" target="_blank">
-          <button
-            
-            class="video flex items-center gap-3 py-2 px-4 md:py-3 lg:px-8"
-          >
-            <span
-              ><svg
-                class="play"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <button
+                class="video flex items-center gap-3 py-2 px-4 md:py-3 lg:px-8"
               >
-                <path
-                  class="play-fill"
-                  d="M10 0C15.5116 0 20 4.48625 20 10.0058C20 15.5137 15.5116 20 10 20C4.48842 20 0 15.5137 0 10.0058C0 4.48625 4.48842 0 10 0ZM8.861 6.02991C8.64865 6.02991 8.44595 6.07815 8.2529 6.17463C8.01158 6.3097 7.81853 6.52195 7.71236 6.77279C7.64479 6.94645 7.53861 7.46744 7.53861 7.47709C7.43243 8.04631 7.37452 8.9725 7.37452 9.99518C7.37452 10.9706 7.43243 11.8572 7.51931 12.4361C7.52896 12.4457 7.63514 13.0921 7.75097 13.314C7.96332 13.7192 8.37838 13.9701 8.82239 13.9701H8.861C9.15058 13.9604 9.75869 13.7096 9.75869 13.7C10.7819 13.2754 12.7992 11.9537 13.61 11.0757L13.668 11.0178C13.7741 10.9117 13.9093 10.7477 13.9382 10.7091C14.0927 10.5065 14.1699 10.2557 14.1699 10.0058C14.1699 9.72504 14.083 9.46454 13.9189 9.25229C13.8803 9.2137 13.7355 9.04969 13.6004 8.91462C12.8089 8.06561 10.7432 6.67631 9.66216 6.25181C9.49807 6.18524 9.08301 6.03956 8.861 6.02991Z"
-                  fill="#3D77F5"
-                />
-              </svg>
-            </span>
-            Watch Video
-          </button>
-          </a>
+                <span
+                  ><svg
+                    class="play"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="https://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="play-fill"
+                      d="M10 0C15.5116 0 20 4.48625 20 10.0058C20 15.5137 15.5116 20 10 20C4.48842 20 0 15.5137 0 10.0058C0 4.48625 4.48842 0 10 0ZM8.861 6.02991C8.64865 6.02991 8.44595 6.07815 8.2529 6.17463C8.01158 6.3097 7.81853 6.52195 7.71236 6.77279C7.64479 6.94645 7.53861 7.46744 7.53861 7.47709C7.43243 8.04631 7.37452 8.9725 7.37452 9.99518C7.37452 10.9706 7.43243 11.8572 7.51931 12.4361C7.52896 12.4457 7.63514 13.0921 7.75097 13.314C7.96332 13.7192 8.37838 13.9701 8.82239 13.9701H8.861C9.15058 13.9604 9.75869 13.7096 9.75869 13.7C10.7819 13.2754 12.7992 11.9537 13.61 11.0757L13.668 11.0178C13.7741 10.9117 13.9093 10.7477 13.9382 10.7091C14.0927 10.5065 14.1699 10.2557 14.1699 10.0058C14.1699 9.72504 14.083 9.46454 13.9189 9.25229C13.8803 9.2137 13.7355 9.04969 13.6004 8.91462C12.8089 8.06561 10.7432 6.67631 9.66216 6.25181C9.49807 6.18524 9.08301 6.03956 8.861 6.02991Z"
+                      fill="#3D77F5"
+                    />
+                  </svg>
+                </span>
+                Watch Video
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="home-img mx-auto -order-1 lg:order-1">
+          <img src="images/home.png" alt="home" />
         </div>
       </div>
-      <div class="home-img mx-auto -order-1 lg:order-1">
-        <img src="images/home.png" alt="home" />
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="clients" class="pt-20">
-    <div class="grid md:grid-cols-2">
-      <div class="clients-img">
-        <img class="client" src="images/client.png" alt="client" />
+    <section id="clients" class="pt-20">
+      <div class="grid md:grid-cols-2">
+        <div class="clients-img">
+          <img class="client" src="images/client.png" alt="client" />
+        </div>
+        <div class="clients-content containers">
+          <h3 class="text-primary creature-studio text-xl pt-8 lg:pt-0">
+            OUR CLIENTS
+          </h3>
+          <h1
+            class="creature-title text-xl md:text-3xl 2xl:text-4xl 2xl:leading-normal font-bold pt-3 lg:pt-5"
+          >
+            Buat Website & Design Dengan Harga Yang Lebih Murah
+          </h1>
+          <p class="creature-desc text-base md:text-lg py-3 lg:py-4">
+            Solusi terbaik untuk industri kreatif dan pemasaran digital,
+            meliputi branding, pengembangan situs web, dan desain grafis
+          </p>
+          <div class="box flex flex-wrap lg:-ms-4">
+            <div
+              class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center"
+            >
+              <h1 class="text-primary text-3xl font-bold">1.100+</h1>
+              <h5 class="py-4 text-xl font-semibold">Clients</h5>
+            </div>
+            <div
+              class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center"
+            >
+              <h1 class="text-primary text-3xl font-bold">100</h1>
+              <h5 class="py-4 text-xl font-semibold">Projects</h5>
+            </div>
+            <div
+              class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center mt-2"
+            >
+              <h1 class="text-primary text-3xl font-bold">6</h1>
+              <h5 class="py-4 text-xl font-semibold">Team</h5>
+            </div>
+            <div
+              class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center mt-2"
+            >
+              <h1 class="text-primary text-3xl font-bold">25</h1>
+              <h5 class="py-4 text-xl font-semibold">Mentors</h5>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="clients-content containers">
-        <h3 class="text-primary creature-studio text-xl pt-8 lg:pt-0">
-          OUR CLIENTS
-        </h3>
-        <h1
-          class="creature-title text-xl md:text-3xl 2xl:text-4xl 2xl:leading-normal font-bold pt-3 lg:pt-5"
+
+      <!-- TABLET SHOW -->
+      <div class="box flex flex-wrap pt-10">
+        <div
+          class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden"
         >
-          Buat Website & Design Dengan Harga Yang Lebih Murah
+          <h1 class="text-primary text-3xl font-bold">1.100+</h1>
+          <h5 class="py-4 text-xl font-semibold">Clients</h5>
+        </div>
+        <div
+          class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden"
+        >
+          <h1 class="text-primary text-3xl font-bold">100</h1>
+          <h5 class="py-4 text-xl font-semibold">Projects</h5>
+        </div>
+        <div
+          class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden"
+        >
+          <h1 class="text-primary text-3xl font-bold">6</h1>
+          <h5 class="py-4 text-xl font-semibold">Team</h5>
+        </div>
+        <div
+          class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden"
+        >
+          <h1 class="text-primary text-3xl font-bold">25</h1>
+          <h5 class="py-4 text-xl font-semibold">Mentors</h5>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <section id="layanan" class="pt-20">
+      <div class="containers md:text-center">
+        <h3 class="text-primary creature-studio text-xl">Our Services</h3>
+        <h1
+          class="creature-title text-xl md:text-3xl 2xl:text-4xl 2xl:leading-normal font-bold py-3 lg:py-5"
+        >
+          Solusi Sempurna Untuk Bisnis Anda
         </h1>
-        <p class="creature-desc text-base md:text-lg py-3 lg:py-4">
-          Solusi terbaik untuk industri kreatif dan pemasaran digital, meliputi
-          branding, pengembangan situs web, dan desain grafis
+        <p class="layanan-desc text-lg lg:w-3/5 m-auto">
+          Untuk membantu klien kami mencapai kesuksesan melalui inovasi digital
+          dan pemasaran digital mulai dari branding, pengembangan situs web, dan
+          desain grafis.
         </p>
-        <div class="box flex flex-wrap lg:-ms-4">
-          <div
-            class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center"
-          >
-            <h1 class="text-primary text-3xl font-bold">1.100+</h1>
-            <h5 class="py-4 text-xl font-semibold">Clients</h5>
-          </div>
-          <div
-            class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center"
-          >
-            <h1 class="text-primary text-3xl font-bold">100</h1>
-            <h5 class="py-4 text-xl font-semibold">Projects</h5>
-          </div>
-          <div
-            class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center mt-2"
-          >
-            <h1 class="text-primary text-3xl font-bold">6</h1>
-            <h5 class="py-4 text-xl font-semibold">Team</h5>
-          </div>
-          <div
-            class="box-info md:hidden lg:block w-1/2 p-8 bg-white text-center mt-2"
-          >
-            <h1 class="text-primary text-3xl font-bold">25</h1>
-            <h5 class="py-4 text-xl font-semibold">Mentors</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- TABLET SHOW -->
-    <div class="box flex flex-wrap pt-10">
-      <div
-        class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden"
-      >
-        <h1 class="text-primary text-3xl font-bold">1.100+</h1>
-        <h5 class="py-4 text-xl font-semibold">Clients</h5>
-      </div>
-      <div
-        class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden"
-      >
-        <h1 class="text-primary text-3xl font-bold">100</h1>
-        <h5 class="py-4 text-xl font-semibold">Projects</h5>
-      </div>
-      <div
-        class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden"
-      >
-        <h1 class="text-primary text-3xl font-bold">6</h1>
-        <h5 class="py-4 text-xl font-semibold">Team</h5>
-      </div>
-      <div
-        class="box-info w-1/2 p-8 bg-white text-center hidden md:block lg:hidden"
-      >
-        <h1 class="text-primary text-3xl font-bold">25</h1>
-        <h5 class="py-4 text-xl font-semibold">Mentors</h5>
-      </div>
-    </div>
-  </section>
-  <!--  -->
-
-  <section id="layanan" class="pt-20">
-    <div class="containers md:text-center">
-      <h3 class="text-primary creature-studio text-xl">Our Services</h3>
-      <h1
-        class="creature-title text-xl md:text-3xl 2xl:text-4xl 2xl:leading-normal font-bold py-3 lg:py-5"
-      >
-        Solusi Sempurna Untuk Bisnis Anda
-      </h1>
-      <p class="layanan-desc text-lg lg:w-3/5 m-auto">
-        Untuk membantu klien kami mencapai kesuksesan melalui inovasi digital
-        dan pemasaran digital mulai dari branding, pengembangan situs web, dan
-        desain grafis.
-      </p>
-
-      <div
-        class="card-section grid md:grid-cols-4 lg:grid-cols-3 place-items-center py-10 md:py-16 sm:gap-10"
-      >
-        <div class="card bg-white py-9 md:col-span-2 lg:col-auto">
-          <div class="web flex justify-center">
-            <img src="images/icon-card/web.svg" alt="web" />
-          </div>
-          <h4
-            class="card-title text-center text-2xl 2xl:text-3xl font-bold py-3"
-          >
-            Web Development
-          </h4>
-          <p
-            class="card-desc font-normal text-lg text-center w-4/5 md:w-3/4 m-auto"
-          >
-            Menyediakan layanan pembuatan situs web dengan fitur terbaik untuk
-            mendukung bisnis Anda
-          </p>
-          <button
-            class="card-btn flex m-auto items-center bg-primary text-white gap-3 py-3 px-7 my-5"
-          >
-            All Details
-            <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="13"
-                viewBox="0 0 14 13"
-                fill="none"
-              >
-                <path
-                  d="M13.0303 7.03033C13.3232 6.73744 13.3232 6.26256 13.0303 5.96967L8.25736 1.1967C7.96447 0.903806 7.48959 0.903806 7.1967 1.1967C6.90381 1.48959 6.90381 1.96447 7.1967 2.25736L11.4393 6.5L7.1967 10.7426C6.90381 11.0355 6.90381 11.5104 7.1967 11.8033C7.48959 12.0962 7.96447 12.0962 8.25736 11.8033L13.0303 7.03033ZM0.5 7.25H12.5V5.75H0.5V7.25Z"
-                  fill="#FAFAFA"
-                /></svg
-            ></span>
-          </button>
-        </div>
-
-        <div class="card bg-white py-9 md:col-span-2 lg:col-auto">
-          <div class="design flex justify-center">
-            <img src="images/icon-card/graph-design.svg" alt="design" />
-          </div>
-          <h4
-            class="card-title text-center text-2xl 2xl:text-3xl font-bold py-3"
-          >
-            Graphic Design
-          </h4>
-          <p
-            class="card-desc font-normal text-lg text-center w-4/5 md:w-3/4 m-auto"
-          >
-            Hadirkan sentuhan kreatif kami ke design anda membuatnya terlihat
-            lebih menarik
-          </p>
-          <button
-            class="card-btn flex m-auto items-center bg-primary text-white gap-3 py-3 px-7 my-5"
-          >
-            All Details
-            <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="13"
-                viewBox="0 0 14 13"
-                fill="none"
-              >
-                <path
-                  d="M13.0303 7.03033C13.3232 6.73744 13.3232 6.26256 13.0303 5.96967L8.25736 1.1967C7.96447 0.903806 7.48959 0.903806 7.1967 1.1967C6.90381 1.48959 6.90381 1.96447 7.1967 2.25736L11.4393 6.5L7.1967 10.7426C6.90381 11.0355 6.90381 11.5104 7.1967 11.8033C7.48959 12.0962 7.96447 12.0962 8.25736 11.8033L13.0303 7.03033ZM0.5 7.25H12.5V5.75H0.5V7.25Z"
-                  fill="#FAFAFA"
-                /></svg
-            ></span>
-          </button>
-        </div>
 
         <div
-          class="card bg-white py-9 md:col-span-4 lg:col-auto md:w-1/2 lg:w-full"
+          class="card-section grid md:grid-cols-4 lg:grid-cols-3 place-items-center py-10 md:py-16 sm:gap-10"
         >
-          <div class="logo-design flex justify-center">
-            <img src="images/icon-card/logo-design.svg" alt="logo" />
+          <div class="card bg-white py-9 md:col-span-2 lg:col-auto">
+            <div class="web flex justify-center">
+              <img src="images/icon-card/web.svg" alt="web" />
+            </div>
+            <h4
+              class="card-title text-center text-2xl 2xl:text-3xl font-bold py-3"
+            >
+              Web Development
+            </h4>
+            <p
+              class="card-desc font-normal text-lg text-center w-4/5 md:w-3/4 m-auto"
+            >
+              Menyediakan layanan pembuatan situs web dengan fitur terbaik untuk
+              mendukung bisnis Anda
+            </p>
+            <button
+              class="card-btn flex m-auto items-center bg-primary text-white gap-3 py-3 px-7 my-5"
+            >
+              All Details
+              <span
+                ><svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                >
+                  <path
+                    d="M13.0303 7.03033C13.3232 6.73744 13.3232 6.26256 13.0303 5.96967L8.25736 1.1967C7.96447 0.903806 7.48959 0.903806 7.1967 1.1967C6.90381 1.48959 6.90381 1.96447 7.1967 2.25736L11.4393 6.5L7.1967 10.7426C6.90381 11.0355 6.90381 11.5104 7.1967 11.8033C7.48959 12.0962 7.96447 12.0962 8.25736 11.8033L13.0303 7.03033ZM0.5 7.25H12.5V5.75H0.5V7.25Z"
+                    fill="#FAFAFA"
+                  /></svg
+              ></span>
+            </button>
           </div>
-          <h4
-            class="card-title text-center text-2xl 2xl:text-3xl font-bold py-3"
+
+          <div class="card bg-white py-9 md:col-span-2 lg:col-auto">
+            <div class="design flex justify-center">
+              <img src="images/icon-card/graph-design.svg" alt="design" />
+            </div>
+            <h4
+              class="card-title text-center text-2xl 2xl:text-3xl font-bold py-3"
+            >
+              Graphic Design
+            </h4>
+            <p
+              class="card-desc font-normal text-lg text-center w-4/5 md:w-3/4 m-auto"
+            >
+              Hadirkan sentuhan kreatif kami ke design anda membuatnya terlihat
+              lebih menarik
+            </p>
+            <button
+              class="card-btn flex m-auto items-center bg-primary text-white gap-3 py-3 px-7 my-5"
+            >
+              All Details
+              <span
+                ><svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                >
+                  <path
+                    d="M13.0303 7.03033C13.3232 6.73744 13.3232 6.26256 13.0303 5.96967L8.25736 1.1967C7.96447 0.903806 7.48959 0.903806 7.1967 1.1967C6.90381 1.48959 6.90381 1.96447 7.1967 2.25736L11.4393 6.5L7.1967 10.7426C6.90381 11.0355 6.90381 11.5104 7.1967 11.8033C7.48959 12.0962 7.96447 12.0962 8.25736 11.8033L13.0303 7.03033ZM0.5 7.25H12.5V5.75H0.5V7.25Z"
+                    fill="#FAFAFA"
+                  /></svg
+              ></span>
+            </button>
+          </div>
+
+          <div
+            class="card bg-white py-9 md:col-span-4 lg:col-auto md:w-1/2 lg:w-full"
           >
-            Logo Design
-          </h4>
-          <p
-            class="card-desc font-normal text-lg text-center w-4/5 md:w-3/4 m-auto"
-          >
-            Tingkatkan branding logo anda dengan menunjukkan identitas brand
-            untuk mudah dikenali
-          </p>
-          <button
-            class="card-btn flex m-auto items-center bg-primary text-white gap-3 py-3 px-7 my-5"
-          >
-            All Details
-            <span
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="13"
-                viewBox="0 0 14 13"
-                fill="none"
-              >
-                <path
-                  d="M13.0303 7.03033C13.3232 6.73744 13.3232 6.26256 13.0303 5.96967L8.25736 1.1967C7.96447 0.903806 7.48959 0.903806 7.1967 1.1967C6.90381 1.48959 6.90381 1.96447 7.1967 2.25736L11.4393 6.5L7.1967 10.7426C6.90381 11.0355 6.90381 11.5104 7.1967 11.8033C7.48959 12.0962 7.96447 12.0962 8.25736 11.8033L13.0303 7.03033ZM0.5 7.25H12.5V5.75H0.5V7.25Z"
-                  fill="#FAFAFA"
-                /></svg
-            ></span>
-          </button>
+            <div class="logo-design flex justify-center">
+              <img src="images/icon-card/logo-design.svg" alt="logo" />
+            </div>
+            <h4
+              class="card-title text-center text-2xl 2xl:text-3xl font-bold py-3"
+            >
+              Logo Design
+            </h4>
+            <p
+              class="card-desc font-normal text-lg text-center w-4/5 md:w-3/4 m-auto"
+            >
+              Tingkatkan branding logo anda dengan menunjukkan identitas brand
+              untuk mudah dikenali
+            </p>
+            <button
+              class="card-btn flex m-auto items-center bg-primary text-white gap-3 py-3 px-7 my-5"
+            >
+              All Details
+              <span
+                ><svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  width="14"
+                  height="13"
+                  viewBox="0 0 14 13"
+                  fill="none"
+                >
+                  <path
+                    d="M13.0303 7.03033C13.3232 6.73744 13.3232 6.26256 13.0303 5.96967L8.25736 1.1967C7.96447 0.903806 7.48959 0.903806 7.1967 1.1967C6.90381 1.48959 6.90381 1.96447 7.1967 2.25736L11.4393 6.5L7.1967 10.7426C6.90381 11.0355 6.90381 11.5104 7.1967 11.8033C7.48959 12.0962 7.96447 12.0962 8.25736 11.8033L13.0303 7.03033ZM0.5 7.25H12.5V5.75H0.5V7.25Z"
+                    fill="#FAFAFA"
+                  /></svg
+              ></span>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="project" class="pt-20 md:py-20">
-    <div class="containers md:text-center">
-      <h3 class="text-primary creature-studio text-xl text-center">PROJECT</h3>
-      <h1
-        class="creature-title text-center text-xl md:text-3xl 2xl:text-4xl 2xl:leading-normal font-bold py-3 lg:py-5"
-      >
-        Project Yang Telah Kami Kerjakan
-      </h1>
-      <div class="project-nav pt-10">
-        <ul class="project-ul">
-          <li
-            class="project-content flex flex-wrap justify-center font-semibold gap-3 lg:gap-20 text-lg"
-          >
-            <a class="text-base md:text-lg" id="web">WEB DEVELOPMENT</a>
-            <a class="text-base md:text-lg" id="graphic">GRAPHIC DESIGN</a>
-            <a class="text-base md:text-lg" id="logo">LOGO DESIGN</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="content my-10 md:my-20" id="content">
-
-        <div id="web">
-        <div class="img-line1 flex flex-col md:flex-row justify-center gap-5">
-          <div class="img-line1 cursor-pointer">
-            <img
-              id="img-1"
-              src="https://media.discordapp.net/attachments/387127158935388160/1164988166130909284/img-1.png?ex=654536c7&is=6532c1c7&hm=f208fcff5c6132b0855e84b2300b0c68940af877f875737f2762a86c9b5ce48e&=&width=768&height=448"
-              alt="1"
-            />
-          </div>
-          <div class="img-line1 flex flex-col gap-5">
-            <img
-              class="cursor-pointer"
-              id="img-2"
-              src="https://media.discordapp.net/attachments/387127158935388160/1164988476056412350/img-2.png?ex=65453711&is=6532c211&hm=62bd2d8672b5f8b7b4421ee7bd06c5ebab1e13c4cd272c377481280a2bfb5a30&=&width=356&height=215"
-              alt="2"
-            />
-            <img
-              class="cursor-pointer"
-              id="img-3"
-              src="https://media.discordapp.net/attachments/387127158935388160/1164988476333232188/img-3.png?ex=65453711&is=6532c211&hm=0d731404277a744835f099a15424295ec65ba6e300a16e245e0becae143cee23&=&width=356&height=208"
-              alt="3"
-            />
-          </div>
-        </div>
-        <div class="img-line2 flex sm:justify-center mt-5 gap-4 md:gap-6 lg:gap-8"
+    <section id="project" class="pt-20 md:py-20">
+      <div class="containers md:text-center">
+        <h3 class="text-primary creature-studio text-xl text-center">
+          PROJECT
+        </h3>
+        <h1
+          class="creature-title text-center text-xl md:text-3xl 2xl:text-4xl 2xl:leading-normal font-bold py-3 lg:py-5"
         >
-          <img
-            id="img-4"
-            class="hidden md:block cursor-pointer"
-            src="https://media.discordapp.net/attachments/387127158935388160/1164988476580708372/img-4.png?ex=65453711&is=6532c211&hm=a731ff30aa323996afc679980f1e9584ffb926511a9a105ff6cd76de82f74251&=&width=256&height=287"
-            alt="4"
-          />
-          <img
-            id="img-5"
-            class="hidden md:block cursor-pointer"
-            src="https://media.discordapp.net/attachments/387127158935388160/1164988476815593522/img-5.png?ex=65453711&is=6532c211&hm=a7ed12ba49be1e68e4cb1b4afe30b0d62b92d863cce3295457756f7c0a4fc4ec&=&width=256&height=287"
-            alt="5"
-          />
-          <img
-            id="img-6"
-            class="hidden md:block cursor-pointer"
-            src="https://media.discordapp.net/attachments/387127158935388160/1164988477092401162/img-6.png?ex=65453711&is=6532c211&hm=26bfa0b2bf682a7d593fdb3aed1b94ab7a6c2c86a8d8482623846903b017dc42&=&width=256&height=287"
-            alt="6"
-          />
-          <img
-            id="img-7"
-            class="hidden lg:block cursor-pointer"
-            src="https://media.discordapp.net/attachments/387127158935388160/1164988477377626273/img-7.png?ex=65453711&is=6532c211&hm=7db6d120126df9e179fcf5642088fb330476fb8ce432a4e7640ff025c91e1d35&=&width=256&height=287"
-            alt="7"
-          />
+          Project Yang Telah Kami Kerjakan
+        </h1>
+        <div class="project-nav pt-10">
+          <ul class="project-ul">
+            <li
+              class="project-content flex flex-wrap justify-center font-semibold gap-3 lg:gap-20 text-lg"
+            >
+              <a class="text-base md:text-lg" id="web">WEB DEVELOPMENT</a>
+              <a class="text-base md:text-lg" id="graphic">GRAPHIC DESIGN</a>
+              <a class="text-base md:text-lg" id="logo">LOGO DESIGN</a>
+            </li>
+          </ul>
         </div>
-        </div>
-<!-- 
+
+        <div class="content my-10 md:my-20" id="content">
+          <div id="web">
+            <div
+              class="img-line1 flex flex-col md:flex-row justify-center gap-5"
+            >
+              <div class="img-line1 cursor-pointer">
+                <img
+                  id="img-1"
+                  src="https://media.discordapp.net/attachments/387127158935388160/1164988166130909284/img-1.png?ex=654536c7&is=6532c1c7&hm=f208fcff5c6132b0855e84b2300b0c68940af877f875737f2762a86c9b5ce48e&=&width=768&height=448"
+                  alt="1"
+                />
+              </div>
+              <div class="img-line1 flex flex-col gap-5">
+                <img
+                  class="cursor-pointer"
+                  id="img-2"
+                  src="https://media.discordapp.net/attachments/387127158935388160/1164988476056412350/img-2.png?ex=65453711&is=6532c211&hm=62bd2d8672b5f8b7b4421ee7bd06c5ebab1e13c4cd272c377481280a2bfb5a30&=&width=356&height=215"
+                  alt="2"
+                />
+                <img
+                  class="cursor-pointer"
+                  id="img-3"
+                  src="https://media.discordapp.net/attachments/387127158935388160/1164988476333232188/img-3.png?ex=65453711&is=6532c211&hm=0d731404277a744835f099a15424295ec65ba6e300a16e245e0becae143cee23&=&width=356&height=208"
+                  alt="3"
+                />
+              </div>
+            </div>
+            <div
+              class="img-line2 flex sm:justify-center mt-5 gap-4 md:gap-6 lg:gap-8"
+            >
+              <img
+                id="img-4"
+                class="hidden md:block cursor-pointer"
+                src="https://media.discordapp.net/attachments/387127158935388160/1164988476580708372/img-4.png?ex=65453711&is=6532c211&hm=a731ff30aa323996afc679980f1e9584ffb926511a9a105ff6cd76de82f74251&=&width=256&height=287"
+                alt="4"
+              />
+              <img
+                id="img-5"
+                class="hidden md:block cursor-pointer"
+                src="https://media.discordapp.net/attachments/387127158935388160/1164988476815593522/img-5.png?ex=65453711&is=6532c211&hm=a7ed12ba49be1e68e4cb1b4afe30b0d62b92d863cce3295457756f7c0a4fc4ec&=&width=256&height=287"
+                alt="5"
+              />
+              <img
+                id="img-6"
+                class="hidden md:block cursor-pointer"
+                src="https://media.discordapp.net/attachments/387127158935388160/1164988477092401162/img-6.png?ex=65453711&is=6532c211&hm=26bfa0b2bf682a7d593fdb3aed1b94ab7a6c2c86a8d8482623846903b017dc42&=&width=256&height=287"
+                alt="6"
+              />
+              <img
+                id="img-7"
+                class="hidden lg:block cursor-pointer"
+                src="https://media.discordapp.net/attachments/387127158935388160/1164988477377626273/img-7.png?ex=65453711&is=6532c211&hm=7db6d120126df9e179fcf5642088fb330476fb8ce432a4e7640ff025c91e1d35&=&width=256&height=287"
+                alt="7"
+              />
+            </div>
+          </div>
         <div id="graphic" class="hidden">
         <div class="img-line1 flex flex-col md:flex-row justify-center gap-5">
           <div class="img-1">
@@ -556,454 +573,776 @@
           />
         </div>
         </div> -->
-
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="py-10">
-    <div
-      class="containers bg-primary text-white text-center p-10 lg:p-14 md:py-14 rounded-lg"
-    >
-      <h3 class="text-white creature-studio md:text-xl text-center">
-        GOT A PROJECT?
-      </h3>
-      <div class="relative">
-        <div class="dots-title hidden lg:block absolute">
-          <svg width="69" height="153" viewBox="0 0 69 153" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g opacity="0.2">
-          <rect x="68.1818" y="0.820557" width="5" height="5" rx="2.5" transform="rotate(90 68.1818 0.820557)" fill="white"/>
-          <rect x="68.1818" y="21.8206" width="5" height="5" rx="2.5" transform="rotate(90 68.1818 21.8206)" fill="white"/>
-          <rect x="68.1818" y="42.8206" width="5" height="5" rx="2.5" transform="rotate(90 68.1818 42.8206)" fill="white"/>
-          <rect x="68.1818" y="63.8206" width="5" height="5" rx="2.5" transform="rotate(90 68.1818 63.8206)" fill="white"/>
-          <rect x="68.1818" y="84.8206" width="5" height="5" rx="2.5" transform="rotate(90 68.1818 84.8206)" fill="white"/>
-          <rect x="68.1818" y="105.821" width="5" height="5" rx="2.5" transform="rotate(90 68.1818 105.821)" fill="white"/>
-          <rect x="68.1818" y="126.821" width="5" height="5" rx="2.5" transform="rotate(90 68.1818 126.821)" fill="white"/>
-          <rect x="68.1818" y="147.821" width="5" height="5" rx="2.5" transform="rotate(90 68.1818 147.821)" fill="white"/>
-          <rect x="47.1818" y="0.820557" width="5" height="5" rx="2.5" transform="rotate(90 47.1818 0.820557)" fill="white"/>
-          <rect x="47.1818" y="21.8206" width="5" height="5" rx="2.5" transform="rotate(90 47.1818 21.8206)" fill="white"/>
-          <rect x="47.1818" y="42.8206" width="5" height="5" rx="2.5" transform="rotate(90 47.1818 42.8206)" fill="white"/>
-          <rect x="47.1818" y="63.8206" width="5" height="5" rx="2.5" transform="rotate(90 47.1818 63.8206)" fill="white"/>
-          <rect x="47.1818" y="84.8206" width="5" height="5" rx="2.5" transform="rotate(90 47.1818 84.8206)" fill="white"/>
-          <rect x="47.1818" y="105.821" width="5" height="5" rx="2.5" transform="rotate(90 47.1818 105.821)" fill="white"/>
-          <rect x="47.1818" y="126.821" width="5" height="5" rx="2.5" transform="rotate(90 47.1818 126.821)" fill="white"/>
-          <rect x="47.1818" y="147.821" width="5" height="5" rx="2.5" transform="rotate(90 47.1818 147.821)" fill="white"/>
-          <rect x="26.1818" y="0.820557" width="5" height="5" rx="2.5" transform="rotate(90 26.1818 0.820557)" fill="white"/>
-          <rect x="26.1818" y="21.8206" width="5" height="5" rx="2.5" transform="rotate(90 26.1818 21.8206)" fill="white"/>
-          <rect x="26.1818" y="42.8206" width="5" height="5" rx="2.5" transform="rotate(90 26.1818 42.8206)" fill="white"/>
-          <rect x="26.1818" y="63.8206" width="5" height="5" rx="2.5" transform="rotate(90 26.1818 63.8206)" fill="white"/>
-          <rect x="26.1818" y="84.8206" width="5" height="5" rx="2.5" transform="rotate(90 26.1818 84.8206)" fill="white"/>
-          <rect x="26.1818" y="105.821" width="5" height="5" rx="2.5" transform="rotate(90 26.1818 105.821)" fill="white"/>
-          <rect x="26.1818" y="126.821" width="5" height="5" rx="2.5" transform="rotate(90 26.1818 126.821)" fill="white"/>
-          <rect x="26.1818" y="147.821" width="5" height="5" rx="2.5" transform="rotate(90 26.1818 147.821)" fill="white"/>
-          <rect x="5.18176" y="0.820557" width="5" height="5" rx="2.5" transform="rotate(90 5.18176 0.820557)" fill="white"/>
-          <rect x="5.18176" y="21.8206" width="5" height="5" rx="2.5" transform="rotate(90 5.18176 21.8206)" fill="white"/>
-          <rect x="5.18176" y="42.8206" width="5" height="5" rx="2.5" transform="rotate(90 5.18176 42.8206)" fill="white"/>
-          <rect x="5.18176" y="63.8206" width="5" height="5" rx="2.5" transform="rotate(90 5.18176 63.8206)" fill="white"/>
-          <rect x="5.18176" y="84.8206" width="5" height="5" rx="2.5" transform="rotate(90 5.18176 84.8206)" fill="white"/>
-          <rect x="5.18176" y="105.821" width="5" height="5" rx="2.5" transform="rotate(90 5.18176 105.821)" fill="white"/>
-          <rect x="5.18176" y="126.821" width="5" height="5" rx="2.5" transform="rotate(90 5.18176 126.821)" fill="white"/>
-          <rect x="5.18176" y="147.821" width="5" height="5" rx="2.5" transform="rotate(90 5.18176 147.821)" fill="white"/>
-          </g>
-          </svg>
-        </div>
-        <div class="dots hidden lg:block md:absolute">
-          <svg
-            width="152"
-            height="68"
-            viewBox="0 0 152 68"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g opacity="0.2">
-              <rect
-                x="152"
-                y="68"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 152 68)"
-                fill="white"
-              />
-              <rect
-                x="131"
-                y="68"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 131 68)"
-                fill="white"
-              />
-              <rect
-                x="110"
-                y="68"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 110 68)"
-                fill="white"
-              />
-              <rect
-                x="89"
-                y="68"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 89 68)"
-                fill="white"
-              />
-              <rect
-                x="68"
-                y="68"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 68 68)"
-                fill="white"
-              />
-              <rect
-                x="47"
-                y="68"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 47 68)"
-                fill="white"
-              />
-              <rect
-                x="26"
-                y="68"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 26 68)"
-                fill="white"
-              />
-              <rect
-                x="5"
-                y="68"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 5 68)"
-                fill="white"
-              />
-              <rect
-                x="152"
-                y="47"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 152 47)"
-                fill="white"
-              />
-              <rect
-                x="131"
-                y="47"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 131 47)"
-                fill="white"
-              />
-              <rect
-                x="110"
-                y="47"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 110 47)"
-                fill="white"
-              />
-              <rect
-                x="89"
-                y="47"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 89 47)"
-                fill="white"
-              />
-              <rect
-                x="68"
-                y="47"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 68 47)"
-                fill="white"
-              />
-              <rect
-                x="47"
-                y="47"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 47 47)"
-                fill="white"
-              />
-              <rect
-                x="26"
-                y="47"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 26 47)"
-                fill="white"
-              />
-              <rect
-                x="5"
-                y="47"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 5 47)"
-                fill="white"
-              />
-              <rect
-                x="152"
-                y="26"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 152 26)"
-                fill="white"
-              />
-              <rect
-                x="131"
-                y="26"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 131 26)"
-                fill="white"
-              />
-              <rect
-                x="110"
-                y="26"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 110 26)"
-                fill="white"
-              />
-              <rect
-                x="89"
-                y="26"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 89 26)"
-                fill="white"
-              />
-              <rect
-                x="68"
-                y="26"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 68 26)"
-                fill="white"
-              />
-              <rect
-                x="47"
-                y="26"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 47 26)"
-                fill="white"
-              />
-              <rect
-                x="26"
-                y="26"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 26 26)"
-                fill="white"
-              />
-              <rect
-                x="5"
-                y="26"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 5 26)"
-                fill="white"
-              />
-              <rect
-                x="152"
-                y="5"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 152 5)"
-                fill="white"
-              />
-              <rect
-                x="131"
-                y="5"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 131 5)"
-                fill="white"
-              />
-              <rect
-                x="110"
-                y="5"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 110 5)"
-                fill="white"
-              />
-              <rect
-                x="89"
-                y="5"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 89 5)"
-                fill="white"
-              />
-              <rect
-                x="68"
-                y="5"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 68 5)"
-                fill="white"
-              />
-              <rect
-                x="47"
-                y="5"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 47 5)"
-                fill="white"
-              />
-              <rect
-                x="26"
-                y="5"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 26 5)"
-                fill="white"
-              />
-              <rect
-                x="5"
-                y="5"
-                width="5"
-                height="5"
-                rx="2.5"
-                transform="rotate(-180 5 5)"
-                fill="white"
-              />
-            </g>
-          </svg>
         </div>
       </div>
-      <div class="contact-title">
-        <h1
-          class="creature-title text-lg md:text-4xl 2xl:text-5xl 2xl:leading-normal font-bold py-3 lg:py-5"
-        >
-          We’re a team of creatives who are <br class="hidden md:block" />
-          excited about unique ideas
-        </h1>
-      </div>
+    </section>
+
+    <section id="contact" class="py-10">
       <div
-        class="btn-contact-parent flex flex-col md:flex-row justify-center gap-5 md:gap-10 mt-5"
+        class="containers bg-primary text-white text-center p-10 lg:p-14 md:py-14 rounded-lg"
       >
-
-
-      
-        <button
-          onclick="newEmail('mailto:creaturestudio23@gmail.com')"
-          class="btn-contact flex items-center justify-center gap-3 py-2 px-10 md:py-3 lg:px-14 bg-primary text-white hover:bg-white hover:text-primary"
-        >
-          <span
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="17"
-              viewBox="0 0 20 17"
+        <h3 class="text-white creature-studio md:text-xl text-center">
+          GOT A PROJECT?
+        </h3>
+        <div class="relative">
+          <div class="dots-title hidden lg:block absolute">
+            <svg
+              width="69"
+              height="153"
+              viewBox="0 0 69 153"
               fill="none"
+              xmlns="https://www.w3.org/2000/svg"
             >
-              <path
-                class="envelope"
-                d="M5.35032 9.26555L0 12.7105V5.82058L5.35032 9.26555ZM20 2.83493L10.0212 9.26555L0 2.83493V0.5H20V2.83493ZM20 5.82058V12.7105L14.6497 9.26555L20 5.82058ZM13.5032 9.99282L20 14.2034V16.5H0V14.2034L6.49682 9.99282L10.0212 12.2512L13.5032 9.99282Z"
-                fill="white"
-              /></svg></span
-          >Email Us
-        </button>
-     
-        <button 
-          onclick="newWindow('https://api.whatsapp.com/send/?phone=%2B628987061371&text&type=phone_number&app_absent=0')"
-          class="btn-contact flex justify-center py-2 px-10 md:py-3 lg:px-14 bg-primary text-white hover:bg-white hover:text-primary"
+              <g opacity="0.2">
+                <rect
+                  x="68.1818"
+                  y="0.820557"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 68.1818 0.820557)"
+                  fill="white"
+                />
+                <rect
+                  x="68.1818"
+                  y="21.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 68.1818 21.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="68.1818"
+                  y="42.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 68.1818 42.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="68.1818"
+                  y="63.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 68.1818 63.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="68.1818"
+                  y="84.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 68.1818 84.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="68.1818"
+                  y="105.821"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 68.1818 105.821)"
+                  fill="white"
+                />
+                <rect
+                  x="68.1818"
+                  y="126.821"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 68.1818 126.821)"
+                  fill="white"
+                />
+                <rect
+                  x="68.1818"
+                  y="147.821"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 68.1818 147.821)"
+                  fill="white"
+                />
+                <rect
+                  x="47.1818"
+                  y="0.820557"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 47.1818 0.820557)"
+                  fill="white"
+                />
+                <rect
+                  x="47.1818"
+                  y="21.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 47.1818 21.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="47.1818"
+                  y="42.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 47.1818 42.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="47.1818"
+                  y="63.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 47.1818 63.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="47.1818"
+                  y="84.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 47.1818 84.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="47.1818"
+                  y="105.821"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 47.1818 105.821)"
+                  fill="white"
+                />
+                <rect
+                  x="47.1818"
+                  y="126.821"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 47.1818 126.821)"
+                  fill="white"
+                />
+                <rect
+                  x="47.1818"
+                  y="147.821"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 47.1818 147.821)"
+                  fill="white"
+                />
+                <rect
+                  x="26.1818"
+                  y="0.820557"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 26.1818 0.820557)"
+                  fill="white"
+                />
+                <rect
+                  x="26.1818"
+                  y="21.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 26.1818 21.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="26.1818"
+                  y="42.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 26.1818 42.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="26.1818"
+                  y="63.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 26.1818 63.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="26.1818"
+                  y="84.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 26.1818 84.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="26.1818"
+                  y="105.821"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 26.1818 105.821)"
+                  fill="white"
+                />
+                <rect
+                  x="26.1818"
+                  y="126.821"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 26.1818 126.821)"
+                  fill="white"
+                />
+                <rect
+                  x="26.1818"
+                  y="147.821"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 26.1818 147.821)"
+                  fill="white"
+                />
+                <rect
+                  x="5.18176"
+                  y="0.820557"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 5.18176 0.820557)"
+                  fill="white"
+                />
+                <rect
+                  x="5.18176"
+                  y="21.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 5.18176 21.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="5.18176"
+                  y="42.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 5.18176 42.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="5.18176"
+                  y="63.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 5.18176 63.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="5.18176"
+                  y="84.8206"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 5.18176 84.8206)"
+                  fill="white"
+                />
+                <rect
+                  x="5.18176"
+                  y="105.821"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 5.18176 105.821)"
+                  fill="white"
+                />
+                <rect
+                  x="5.18176"
+                  y="126.821"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 5.18176 126.821)"
+                  fill="white"
+                />
+                <rect
+                  x="5.18176"
+                  y="147.821"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(90 5.18176 147.821)"
+                  fill="white"
+                />
+              </g>
+            </svg>
+          </div>
+          <div class="dots hidden lg:block md:absolute">
+            <svg
+              width="152"
+              height="68"
+              viewBox="0 0 152 68"
+              fill="none"
+              xmlns="https://www.w3.org/2000/svg"
+            >
+              <g opacity="0.2">
+                <rect
+                  x="152"
+                  y="68"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 152 68)"
+                  fill="white"
+                />
+                <rect
+                  x="131"
+                  y="68"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 131 68)"
+                  fill="white"
+                />
+                <rect
+                  x="110"
+                  y="68"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 110 68)"
+                  fill="white"
+                />
+                <rect
+                  x="89"
+                  y="68"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 89 68)"
+                  fill="white"
+                />
+                <rect
+                  x="68"
+                  y="68"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 68 68)"
+                  fill="white"
+                />
+                <rect
+                  x="47"
+                  y="68"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 47 68)"
+                  fill="white"
+                />
+                <rect
+                  x="26"
+                  y="68"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 26 68)"
+                  fill="white"
+                />
+                <rect
+                  x="5"
+                  y="68"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 5 68)"
+                  fill="white"
+                />
+                <rect
+                  x="152"
+                  y="47"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 152 47)"
+                  fill="white"
+                />
+                <rect
+                  x="131"
+                  y="47"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 131 47)"
+                  fill="white"
+                />
+                <rect
+                  x="110"
+                  y="47"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 110 47)"
+                  fill="white"
+                />
+                <rect
+                  x="89"
+                  y="47"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 89 47)"
+                  fill="white"
+                />
+                <rect
+                  x="68"
+                  y="47"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 68 47)"
+                  fill="white"
+                />
+                <rect
+                  x="47"
+                  y="47"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 47 47)"
+                  fill="white"
+                />
+                <rect
+                  x="26"
+                  y="47"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 26 47)"
+                  fill="white"
+                />
+                <rect
+                  x="5"
+                  y="47"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 5 47)"
+                  fill="white"
+                />
+                <rect
+                  x="152"
+                  y="26"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 152 26)"
+                  fill="white"
+                />
+                <rect
+                  x="131"
+                  y="26"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 131 26)"
+                  fill="white"
+                />
+                <rect
+                  x="110"
+                  y="26"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 110 26)"
+                  fill="white"
+                />
+                <rect
+                  x="89"
+                  y="26"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 89 26)"
+                  fill="white"
+                />
+                <rect
+                  x="68"
+                  y="26"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 68 26)"
+                  fill="white"
+                />
+                <rect
+                  x="47"
+                  y="26"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 47 26)"
+                  fill="white"
+                />
+                <rect
+                  x="26"
+                  y="26"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 26 26)"
+                  fill="white"
+                />
+                <rect
+                  x="5"
+                  y="26"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 5 26)"
+                  fill="white"
+                />
+                <rect
+                  x="152"
+                  y="5"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 152 5)"
+                  fill="white"
+                />
+                <rect
+                  x="131"
+                  y="5"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 131 5)"
+                  fill="white"
+                />
+                <rect
+                  x="110"
+                  y="5"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 110 5)"
+                  fill="white"
+                />
+                <rect
+                  x="89"
+                  y="5"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 89 5)"
+                  fill="white"
+                />
+                <rect
+                  x="68"
+                  y="5"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 68 5)"
+                  fill="white"
+                />
+                <rect
+                  x="47"
+                  y="5"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 47 5)"
+                  fill="white"
+                />
+                <rect
+                  x="26"
+                  y="5"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 26 5)"
+                  fill="white"
+                />
+                <rect
+                  x="5"
+                  y="5"
+                  width="5"
+                  height="5"
+                  rx="2.5"
+                  transform="rotate(-180 5 5)"
+                  fill="white"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="contact-title">
+          <h1
+            class="creature-title text-lg md:text-4xl 2xl:text-5xl 2xl:leading-normal font-bold py-3 lg:py-5"
+          >
+            We’re a team of creature who are <br class="hidden md:block" />
+            excited about unique ideas
+          </h1>
+        </div>
+        <div
+          class="btn-contact-parent flex flex-col md:flex-row justify-center gap-5 md:gap-10 mt-5"
         >
-          Contact Us
-        </button>
-        
-      </div>
-    </div>
-  </section>
+          <button
+            onclick="newEmail('mailto:creaturestudio23@gmail.com')"
+            class="btn-contact flex items-center justify-center gap-3 py-2 px-10 md:py-3 lg:px-14 bg-primary text-white hover:bg-white hover:text-primary"
+          >
+            <span
+              ><svg
+                xmlns="https://www.w3.org/2000/svg"
+                width="20"
+                height="17"
+                viewBox="0 0 20 17"
+                fill="none"
+              >
+                <path
+                  class="envelope"
+                  d="M5.35032 9.26555L0 12.7105V5.82058L5.35032 9.26555ZM20 2.83493L10.0212 9.26555L0 2.83493V0.5H20V2.83493ZM20 5.82058V12.7105L14.6497 9.26555L20 5.82058ZM13.5032 9.99282L20 14.2034V16.5H0V14.2034L6.49682 9.99282L10.0212 12.2512L13.5032 9.99282Z"
+                  fill="white"
+                /></svg></span
+            >Email Us
+          </button>
 
-  <footer class="pt-10 bg-white">
-    <div class="containers flex flex-wrap justify-between py-10">
-      <div class="creature-footer md:w-full lg:w-1/2 mb-5 md:mb-10 lg:mb-0">
-        <img src="images/creaturelogo.svg" alt="">
-        <p class="text-base md:text-lg py-4 lg:py-6">Creature adalah jasa beli Website &  Desain Grafis Untuk membantu klien kami mencapai kesuksesan mulai dari branding, pengembangan situs web, dan desain grafis.</p>
-        <div class="icon-footer flex items-center gap-8">
-          <span class="fb">
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="21" viewBox="0 0 13 21" fill="none">
-            <path d="M8.19573 20.3313V11.2563H11.3536L11.8264 7.71966H8.19564V5.46164C8.19564 4.43768 8.49038 3.73992 10.0127 3.73992L11.9542 3.73904V0.575866C11.6184 0.532843 10.4658 0.436523 9.12509 0.436523C6.3258 0.436523 4.40935 2.08466 4.40935 5.11148V7.71966H1.24341V11.2563H4.40935V20.3312H8.19573V20.3313Z" fill="#263238"/>
-            </svg>
-          </span>
-          <span class="twitter">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="15" viewBox="0 0 22 15" fill="none">
-              <path d="M14.4494 0.0965034V0.0932617H15.3823L15.7231 0.154854C15.9504 0.19484 16.1567 0.247242 16.342 0.312075C16.5274 0.376909 16.7068 0.452553 16.8802 0.538993C17.0536 0.625432 17.2109 0.713509 17.352 0.80319C17.492 0.891801 17.6175 0.98581 17.7288 1.08522C17.8388 1.18571 18.0104 1.21164 18.2436 1.16302C18.4768 1.11439 18.728 1.04685 18.9971 0.960411C19.2661 0.873972 19.5323 0.776722 19.7954 0.66866C20.0585 0.560599 20.2187 0.491989 20.2761 0.462813C20.3323 0.432568 20.3623 0.41636 20.3658 0.414188L20.3694 0.409326L20.3874 0.401221L20.4053 0.393117L20.4232 0.385013L20.4412 0.376909L20.4448 0.372046L20.4501 0.368805L20.4555 0.365563L20.4591 0.3607L20.477 0.355838L20.495 0.352596L20.4914 0.376909L20.486 0.401221L20.477 0.425534L20.4681 0.449847L20.4591 0.466055L20.4501 0.482263L20.4412 0.506576C20.4352 0.522785 20.4292 0.54439 20.4232 0.57141C20.4173 0.598429 20.3604 0.706474 20.2528 0.895578C20.1452 1.08468 20.0106 1.27648 19.8492 1.47098C19.6877 1.66548 19.543 1.81242 19.4151 1.91184C19.2859 2.01234 19.2004 2.08257 19.1585 2.12255C19.1167 2.16361 19.0658 2.20142 19.006 2.23601L18.9163 2.2895L18.8984 2.29761L18.8804 2.30571L18.8769 2.31057L18.8715 2.31381L18.8661 2.31705L18.8625 2.32192L18.8446 2.33002L18.8266 2.33813L18.8231 2.34299L18.8177 2.34623L18.8123 2.34947L18.8087 2.35433L18.8051 2.3592L18.7997 2.36244L18.7943 2.36568L18.7907 2.37054H18.8804L19.3827 2.27329C19.7176 2.20846 20.0375 2.13012 20.3425 2.03827L20.8269 1.89239L20.8807 1.87619L20.9076 1.86808L20.9255 1.85998L20.9435 1.85187L20.9614 1.84377L20.9793 1.83567L21.0152 1.8308L21.0511 1.82756V1.85998L21.0421 1.86322L21.0332 1.86808L21.0296 1.87294L21.0242 1.87619L21.0188 1.87943L21.0152 1.88429L21.0117 1.88915L21.0063 1.89239L21.0009 1.89564L20.9973 1.9005L20.9937 1.90536L20.9883 1.9086L20.9793 1.92481L20.9704 1.94102L20.965 1.94426C20.9626 1.9475 20.8867 2.03934 20.7372 2.2198C20.5877 2.40134 20.507 2.49318 20.495 2.49535C20.483 2.49859 20.4663 2.5148 20.4448 2.54397C20.4244 2.57422 20.2977 2.69471 20.0644 2.90542C19.8312 3.11613 19.6028 3.3036 19.3792 3.46785C19.1543 3.63318 19.0407 3.83632 19.0383 4.07729C19.0347 4.31717 19.021 4.5884 18.9971 4.89095C18.9731 5.19351 18.9283 5.52037 18.8625 5.87156C18.7967 6.22275 18.6951 6.61985 18.5575 7.06288C18.42 7.5059 18.2526 7.93813 18.0552 8.35955C17.8579 8.78097 17.6516 9.15916 17.4363 9.49414C17.2211 9.82912 17.0237 10.1128 16.8443 10.3451C16.6649 10.5774 16.4826 10.7962 16.2972 11.0015C16.1118 11.2068 15.8774 11.4381 15.594 11.6952C15.3093 11.9513 15.1539 12.0918 15.1276 12.1167C15.1001 12.1404 14.9829 12.229 14.7759 12.3825C14.5702 12.537 14.349 12.6915 14.1122 12.846C13.8766 12.9995 13.6601 13.1275 13.4628 13.2302C13.2654 13.3328 13.0274 13.4501 12.7488 13.5819C12.4713 13.7148 12.1711 13.838 11.8482 13.9514C11.5253 14.0649 11.1845 14.1703 10.8257 14.2675C10.4669 14.3648 10.1201 14.4404 9.7852 14.4944C9.45034 14.5485 9.07062 14.5944 8.64605 14.6322L8.0092 14.6889V14.697H6.84314V14.6889L6.69066 14.6808C6.58902 14.6754 6.50529 14.67 6.43951 14.6646C6.37374 14.6592 6.12557 14.6295 5.69503 14.5755C5.26448 14.5215 4.92663 14.4674 4.68145 14.4134C4.43629 14.3594 4.07152 14.2567 3.58715 14.1054C3.10279 13.9542 2.68839 13.8012 2.34396 13.6467C2.00072 13.4933 1.78545 13.396 1.69814 13.355C1.61203 13.315 1.51516 13.2653 1.40752 13.2059L1.24607 13.1167L1.2425 13.1119L1.2371 13.1086L1.23172 13.1054L1.22813 13.1005L1.21019 13.0924L1.19225 13.0843L1.18868 13.0794L1.18328 13.0762L1.1779 13.073L1.17431 13.0681L1.17074 13.0632L1.16534 13.06H1.15637V13.0276L1.17431 13.0308L1.19225 13.0357L1.27298 13.0438C1.3268 13.0492 1.47331 13.0573 1.71249 13.0681C1.9517 13.0789 2.20582 13.0789 2.47491 13.0681C2.744 13.0573 3.01909 13.033 3.30012 12.9952C3.58118 12.9573 3.91306 12.8925 4.29576 12.8007C4.67848 12.7088 5.03009 12.5997 5.35061 12.4732C5.66993 12.3457 5.89715 12.2507 6.0323 12.188C6.16624 12.1264 6.37075 12.0118 6.64581 11.8444L7.05842 11.5931L7.06201 11.5883L7.06739 11.585L7.07279 11.5818L7.07636 11.5769L7.07994 11.5721L7.08533 11.5688L7.09073 11.5656L7.0943 11.5607L7.11224 11.5558L7.13017 11.5526L7.13376 11.5364L7.13914 11.5202L7.14454 11.5169L7.14811 11.5121L7.0046 11.504C6.90893 11.4986 6.81624 11.4932 6.72654 11.4878C6.63684 11.4824 6.49632 11.4581 6.30496 11.4148C6.11362 11.3716 5.90732 11.3068 5.68606 11.2203C5.46481 11.1339 5.24954 11.0312 5.04024 10.9124C4.83096 10.7935 4.67966 10.6946 4.58637 10.6158C4.49429 10.5379 4.37469 10.4277 4.22759 10.2851C4.08169 10.1414 3.95491 9.99389 3.84727 9.84262C3.73964 9.69135 3.63679 9.51681 3.53874 9.31909L3.38982 9.02409L3.38085 8.99978L3.37188 8.97547L3.3665 8.95926L3.36291 8.94305L3.38982 8.94629L3.41673 8.95116L3.61406 8.97547C3.74563 8.99168 3.95193 8.99707 4.23297 8.99168C4.51403 8.98628 4.70836 8.97547 4.816 8.95926C4.92363 8.94305 4.98942 8.93224 5.01333 8.92684L5.04921 8.91874L5.09406 8.91063L5.13891 8.90253L5.14249 8.89767L5.14788 8.89443L5.15328 8.89118L5.15685 8.88632L5.12097 8.87822L5.08509 8.87011L5.04921 8.86201L5.01333 8.85391L4.97745 8.8458C4.95354 8.8404 4.91169 8.82959 4.85188 8.81338C4.79209 8.79718 4.63063 8.73774 4.36752 8.63509C4.10442 8.53244 3.89512 8.43249 3.73964 8.33524C3.58377 8.2377 3.43515 8.13104 3.29474 8.01593C3.15482 7.89923 3.00115 7.74903 2.8337 7.56534C2.66627 7.38165 2.51678 7.16823 2.38522 6.92511C2.25367 6.68198 2.155 6.44966 2.08922 6.22814C2.0237 6.00793 1.98047 5.78278 1.96007 5.55549L1.92776 5.21512L1.9457 5.21836L1.96364 5.22322L1.98158 5.23133L1.99952 5.23943L2.01746 5.24754L2.0354 5.25564L2.31346 5.3691C2.49885 5.44474 2.72906 5.50958 3.00412 5.5636C3.27921 5.61762 3.44364 5.64735 3.49746 5.65275L3.57818 5.66085H3.73964L3.73607 5.65599L3.73067 5.65275L3.72529 5.6495L3.7217 5.64464L3.71813 5.63978L3.71273 5.63654L3.70735 5.6333L3.70376 5.62843L3.68582 5.62033L3.66788 5.61222L3.66431 5.60736L3.65891 5.60412L3.65353 5.60088L3.64994 5.59602L3.632 5.58791L3.61406 5.57981L3.61049 5.57494C3.6069 5.57277 3.55547 5.5382 3.4562 5.47121C3.35812 5.40314 3.25528 5.31508 3.14764 5.20701C3.04 5.09895 2.93237 4.98549 2.82473 4.86664C2.7169 4.74751 2.62085 4.62005 2.5377 4.48574C2.454 4.35068 2.36548 4.17885 2.2722 3.97031C2.18012 3.76284 2.11015 3.55376 2.06231 3.34305C2.01448 3.13234 1.98757 2.92434 1.98158 2.71902C1.97561 2.51371 1.98158 2.33813 1.99952 2.19225C2.01746 2.04637 2.05334 1.88158 2.10716 1.69789C2.16098 1.5142 2.23872 1.3197 2.34037 1.11439L2.49285 0.806432L2.50182 0.782119L2.51079 0.757806L2.51619 0.754565L2.51976 0.749702L2.52335 0.74484L2.52873 0.741598L2.53413 0.74484L2.5377 0.749702L2.54129 0.754565L2.54667 0.757806L2.55207 0.761048L2.55564 0.765911L2.55923 0.770773L2.56461 0.774015L2.57358 0.790223L2.58255 0.806432L2.58795 0.809673L2.59152 0.814536L2.8337 1.05766C2.99515 1.21975 3.18651 1.40075 3.40776 1.60064C3.62902 1.80054 3.7516 1.90428 3.77552 1.91184C3.79945 1.92048 3.82933 1.94533 3.86521 1.9864C3.90109 2.02639 4.02069 2.12202 4.224 2.27329C4.42732 2.42457 4.69342 2.60017 5.0223 2.80007C5.3512 2.99996 5.71596 3.19717 6.1166 3.39167C6.51726 3.58617 6.9478 3.76176 7.40823 3.91845C7.86868 4.07513 8.19159 4.17778 8.37696 4.22641C8.56234 4.27503 8.87926 4.33716 9.32774 4.4128C9.77623 4.48845 10.1141 4.53707 10.3413 4.55868C10.5686 4.58028 10.724 4.59272 10.8077 4.59596L10.9333 4.5992L10.9297 4.57489L10.9243 4.55057L10.8885 4.34797C10.8646 4.2129 10.8526 4.0238 10.8526 3.78067C10.8526 3.53755 10.8735 3.31334 10.9154 3.10803C10.9572 2.90271 11.02 2.69471 11.1037 2.484C11.1875 2.27329 11.2694 2.10417 11.3495 1.97668C11.4308 1.85025 11.5373 1.706 11.6688 1.54391C11.8004 1.38183 11.9708 1.21435 12.1801 1.04145C12.3894 0.868558 12.6286 0.714579 12.8977 0.579514C13.1668 0.444449 13.4149 0.341785 13.6422 0.271554C13.8694 0.201323 14.0608 0.155389 14.2162 0.133783C14.3717 0.112177 14.4494 0.0997451 14.4494 0.0965034Z" fill="#263238"/>
-            </svg>
-          </span>
-          <span class="ig">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.15649 10.3839C1.15649 6.41032 1.15649 4.42353 2.10336 2.9925C2.52619 2.35348 3.07345 1.80622 3.71247 1.38339C5.1435 0.436523 7.13029 0.436523 11.1039 0.436523C15.0774 0.436523 17.0642 0.436523 18.4953 1.38339C19.1343 1.80622 19.6815 2.35348 20.1044 2.9925C21.0512 4.42353 21.0512 6.41031 21.0512 10.3839V10.3839V10.3839C21.0512 14.3575 21.0512 16.3443 20.1044 17.7753C19.6815 18.4143 19.1343 18.9616 18.4953 19.3844C17.0642 20.3313 15.0774 20.3313 11.1039 20.3313H11.1039H11.1038C7.13028 20.3313 5.1435 20.3313 3.71247 19.3844C3.07345 18.9616 2.52619 18.4143 2.10336 17.7753C1.15649 16.3443 1.15649 14.3575 1.15649 10.3839ZM16.2536 10.3841C16.2536 13.2283 13.9479 15.534 11.1037 15.534C8.25949 15.534 5.95381 13.2283 5.95381 10.3841C5.95381 7.53995 8.25949 5.23427 11.1037 5.23427C13.9479 5.23427 16.2536 7.53995 16.2536 10.3841ZM11.1037 13.7917C12.9856 13.7917 14.5112 12.2661 14.5112 10.3841C14.5112 8.50222 12.9856 6.97661 11.1037 6.97661C9.22176 6.97661 7.69616 8.50222 7.69616 10.3841C7.69616 12.2661 9.22176 13.7917 11.1037 13.7917ZM16.457 6.1856C17.1253 6.1856 17.667 5.64384 17.667 4.97554C17.667 4.30723 17.1253 3.76547 16.457 3.76547C15.7887 3.76547 15.2469 4.30723 15.2469 4.97554C15.2469 5.64384 15.7887 6.1856 16.457 6.1856Z" fill="#263238"/>
-            </svg>
-          </span>
-          <span class="youtube">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="19" viewBox="0 0 28 19" fill="none">
-              <path d="M12.0583 16.8585L7.40586 16.7729C5.8995 16.743 4.38939 16.8026 2.91257 16.4933C0.66599 16.0313 0.506834 13.7657 0.340294 11.8653C0.110819 9.19359 0.199655 6.47338 0.632704 3.82397C0.877175 2.33737 1.83927 1.4503 3.32711 1.35377C8.34966 1.00345 13.4056 1.04497 18.417 1.20841C18.9463 1.22339 19.4792 1.30528 20.0011 1.39849C22.5772 1.85312 22.64 4.42053 22.807 6.5818C22.9736 8.76538 22.9033 10.9602 22.585 13.1289C22.3296 14.9245 21.841 16.4303 19.779 16.5757C17.1955 16.7658 14.6712 16.9188 12.0804 16.8701C12.0806 16.8585 12.0657 16.8585 12.0583 16.8585ZM9.32311 12.3125C11.27 11.1871 13.1798 10.0804 15.1155 8.96256C13.165 7.83714 11.2589 6.73049 9.32311 5.61262V12.3125Z" fill="#263238"/>
-            </svg>
-          </span>
+          <button
+            onclick="newWindow('https://api.whatsapp.com/send/?phone=%2B628987061371&text&type=phone_number&app_absent=0')"
+            class="btn-contact flex justify-center py-2 px-10 md:py-3 lg:px-14 bg-primary text-white hover:bg-white hover:text-primary"
+          >
+            Contact Us
+          </button>
         </div>
       </div>
-      
-      <div class="contact-footer flex flex-col w-full md:w-1/2 lg:w-auto gap-5 mt-5 md:mt-0">
-        <h1 class="font-bold text-lg">Contacts us</h1>
-        <p class="flex items-center gap-3"><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none">
-          <path d="M18.3334 3.44971V11.783C18.3334 12.3356 18.1139 12.8655 17.7232 13.2562C17.3325 13.6469 16.8026 13.8664 16.25 13.8664H3.75002C3.19749 13.8664 2.66758 13.6469 2.27688 13.2562C1.88618 12.8655 1.66669 12.3356 1.66669 11.783V3.44971" stroke="#34364A" stroke-opacity="0.9" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M18.3334 3.44954C18.3334 2.89701 18.1139 2.36711 17.7232 1.97641C17.3325 1.5857 16.8026 1.36621 16.25 1.36621H3.75002C3.19749 1.36621 2.66758 1.5857 2.27688 1.97641C1.88618 2.36711 1.66669 2.89701 1.66669 3.44954L8.89585 7.96343C9.22696 8.17038 9.60956 8.2801 10 8.2801C10.3905 8.2801 10.7731 8.17038 11.1042 7.96343L18.3334 3.44954Z" stroke="#34364A" stroke-opacity="0.9" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg></span>creaturestudio23@gmail.com</p>
-        <p class="flex items-center gap-3"><span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
-          <path d="M12.2516 16.8851L12.2607 16.8915C13.0478 17.3926 13.9822 17.6102 14.9097 17.5084C15.8371 17.4065 16.7021 16.9913 17.3616 16.3313L17.9346 15.7584C18.0615 15.6315 18.1623 15.4808 18.231 15.315C18.2997 15.1492 18.3351 14.9714 18.3351 14.7919C18.3351 14.6124 18.2997 14.4347 18.231 14.2688C18.1623 14.103 18.0615 13.9524 17.9346 13.8255L15.518 11.4107C15.3911 11.2838 15.2405 11.183 15.0746 11.1143C14.9088 11.0456 14.7311 11.0102 14.5516 11.0102C14.3721 11.0102 14.1943 11.0456 14.0285 11.1143C13.8627 11.183 13.712 11.2838 13.5851 11.4107C13.3289 11.6669 12.9814 11.8108 12.6191 11.8108C12.2568 11.8108 11.9094 11.6669 11.6531 11.4107L7.7892 7.54586C7.53305 7.28963 7.38916 6.94217 7.38916 6.57987C7.38916 6.21757 7.53305 5.8701 7.7892 5.61388C7.91616 5.487 8.01689 5.33633 8.0856 5.17051C8.15432 5.00468 8.18969 4.82694 8.18969 4.64744C8.18969 4.46794 8.15432 4.29019 8.0856 4.12437C8.01689 3.95854 7.91616 3.80788 7.7892 3.68099L5.37354 1.26625C5.11732 1.01011 4.76985 0.866211 4.40755 0.866211C4.04526 0.866211 3.69779 1.01011 3.44157 1.26625L2.86771 1.83919C2.20786 2.49883 1.7928 3.36385 1.69111 4.29131C1.58942 5.21878 1.80719 6.15318 2.30843 6.94012L2.3139 6.94923C4.96108 10.8658 8.33452 14.2386 12.2516 16.8851V16.8851Z" stroke="#34364A" stroke-opacity="0.9" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg></span>+628987061371</p>
-        <p class="flex items-center gap-3"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none">
-          <path d="M14.8608 8.65577C14.8608 14.0346 9.35161 17.3484 8.20672 17.9795C8.1433 18.0145 8.07205 18.0329 7.99961 18.0329C7.92718 18.0329 7.85593 18.0145 7.79251 17.9795C6.64676 17.3484 1.13928 14.0346 1.13928 8.65577C1.13928 4.36779 3.71207 1.36621 8.00004 1.36621C12.288 1.36621 14.8608 4.36779 14.8608 8.65577Z" stroke="#34364A" stroke-opacity="0.9" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M4.5697 8.22677C4.5697 9.13656 4.93112 10.0091 5.57444 10.6524C6.21776 11.2957 7.09029 11.6571 8.00008 11.6571C8.90988 11.6571 9.78241 11.2957 10.4257 10.6524C11.069 10.0091 11.4305 9.13656 11.4305 8.22677C11.4305 7.31697 11.069 6.44444 10.4257 5.80112C9.78241 5.1578 8.90988 4.79639 8.00008 4.79639C7.09029 4.79639 6.21776 5.1578 5.57444 5.80112C4.93112 6.44444 4.5697 7.31697 4.5697 8.22677V8.22677Z" stroke="#34364A" stroke-opacity="0.9" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg></span>Bekasi</p>
-      </div>
-    </div>
-    <hr class="containers">
-    <div class="containers footer py-5">
-      <h3 class="text-center lg:text-left">Copyright © 2023 Creature Studio</h3>
-    </div>
-  </footer>
+    </section>
 
-  <body>
+    <footer class="pt-10 bg-white">
+      <div class="containers flex flex-wrap justify-between py-10">
+        <div class="creature-footer md:w-full lg:w-1/2 mb-5 md:mb-10 lg:mb-0">
+          <img src="images/creaturelogo.svg" alt="" />
+          <p class="text-base md:text-lg py-4 lg:py-6">
+            Creature adalah jasa beli Website & Desain Grafis Untuk membantu
+            klien kami mencapai kesuksesan mulai dari branding, pengembangan
+            situs web, dan desain grafis.
+          </p>
+          <div class="icon-footer flex items-center gap-8">
+            <a href="https://www.youtube.com/@creature_studio" target="_blank">
+              <span class="youtube">
+                <svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  width="28"
+                  height="19"
+                  viewBox="0 0 28 19"
+                  fill="none"
+                >
+                  <path
+                    d="M12.0583 16.8585L7.40586 16.7729C5.8995 16.743 4.38939 16.8026 2.91257 16.4933C0.66599 16.0313 0.506834 13.7657 0.340294 11.8653C0.110819 9.19359 0.199655 6.47338 0.632704 3.82397C0.877175 2.33737 1.83927 1.4503 3.32711 1.35377C8.34966 1.00345 13.4056 1.04497 18.417 1.20841C18.9463 1.22339 19.4792 1.30528 20.0011 1.39849C22.5772 1.85312 22.64 4.42053 22.807 6.5818C22.9736 8.76538 22.9033 10.9602 22.585 13.1289C22.3296 14.9245 21.841 16.4303 19.779 16.5757C17.1955 16.7658 14.6712 16.9188 12.0804 16.8701C12.0806 16.8585 12.0657 16.8585 12.0583 16.8585ZM9.32311 12.3125C11.27 11.1871 13.1798 10.0804 15.1155 8.96256C13.165 7.83714 11.2589 6.73049 9.32311 5.61262V12.3125Z"
+                    fill="#263238"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="contact-footer flex flex-col w-full md:w-1/2 lg:w-auto gap-5 mt-5 md:mt-0"
+        >
+          <h1 class="font-bold text-lg">Contacts us</h1>
+          <p class="flex items-center gap-3">
+            <span
+              ><svg
+                xmlns="https://www.w3.org/2000/svg"
+                width="20"
+                height="15"
+                viewBox="0 0 20 15"
+                fill="none"
+              >
+                <path
+                  d="M18.3334 3.44971V11.783C18.3334 12.3356 18.1139 12.8655 17.7232 13.2562C17.3325 13.6469 16.8026 13.8664 16.25 13.8664H3.75002C3.19749 13.8664 2.66758 13.6469 2.27688 13.2562C1.88618 12.8655 1.66669 12.3356 1.66669 11.783V3.44971"
+                  stroke="#34364A"
+                  stroke-opacity="0.9"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.3334 3.44954C18.3334 2.89701 18.1139 2.36711 17.7232 1.97641C17.3325 1.5857 16.8026 1.36621 16.25 1.36621H3.75002C3.19749 1.36621 2.66758 1.5857 2.27688 1.97641C1.88618 2.36711 1.66669 2.89701 1.66669 3.44954L8.89585 7.96343C9.22696 8.17038 9.60956 8.2801 10 8.2801C10.3905 8.2801 10.7731 8.17038 11.1042 7.96343L18.3334 3.44954Z"
+                  stroke="#34364A"
+                  stroke-opacity="0.9"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg></span
+            >creaturestudio23@gmail.com
+          </p>
+          <p class="flex items-center gap-3">
+            <span
+              ><svg
+                xmlns="https://www.w3.org/2000/svg"
+                width="20"
+                height="19"
+                viewBox="0 0 20 19"
+                fill="none"
+              >
+                <path
+                  d="M12.2516 16.8851L12.2607 16.8915C13.0478 17.3926 13.9822 17.6102 14.9097 17.5084C15.8371 17.4065 16.7021 16.9913 17.3616 16.3313L17.9346 15.7584C18.0615 15.6315 18.1623 15.4808 18.231 15.315C18.2997 15.1492 18.3351 14.9714 18.3351 14.7919C18.3351 14.6124 18.2997 14.4347 18.231 14.2688C18.1623 14.103 18.0615 13.9524 17.9346 13.8255L15.518 11.4107C15.3911 11.2838 15.2405 11.183 15.0746 11.1143C14.9088 11.0456 14.7311 11.0102 14.5516 11.0102C14.3721 11.0102 14.1943 11.0456 14.0285 11.1143C13.8627 11.183 13.712 11.2838 13.5851 11.4107C13.3289 11.6669 12.9814 11.8108 12.6191 11.8108C12.2568 11.8108 11.9094 11.6669 11.6531 11.4107L7.7892 7.54586C7.53305 7.28963 7.38916 6.94217 7.38916 6.57987C7.38916 6.21757 7.53305 5.8701 7.7892 5.61388C7.91616 5.487 8.01689 5.33633 8.0856 5.17051C8.15432 5.00468 8.18969 4.82694 8.18969 4.64744C8.18969 4.46794 8.15432 4.29019 8.0856 4.12437C8.01689 3.95854 7.91616 3.80788 7.7892 3.68099L5.37354 1.26625C5.11732 1.01011 4.76985 0.866211 4.40755 0.866211C4.04526 0.866211 3.69779 1.01011 3.44157 1.26625L2.86771 1.83919C2.20786 2.49883 1.7928 3.36385 1.69111 4.29131C1.58942 5.21878 1.80719 6.15318 2.30843 6.94012L2.3139 6.94923C4.96108 10.8658 8.33452 14.2386 12.2516 16.8851V16.8851Z"
+                  stroke="#34364A"
+                  stroke-opacity="0.9"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg></span
+            >+628987061371
+          </p>
+          <p class="flex items-center gap-3">
+            <span
+              ><svg
+                xmlns="https://www.w3.org/2000/svg"
+                width="16"
+                height="19"
+                viewBox="0 0 16 19"
+                fill="none"
+              >
+                <path
+                  d="M14.8608 8.65577C14.8608 14.0346 9.35161 17.3484 8.20672 17.9795C8.1433 18.0145 8.07205 18.0329 7.99961 18.0329C7.92718 18.0329 7.85593 18.0145 7.79251 17.9795C6.64676 17.3484 1.13928 14.0346 1.13928 8.65577C1.13928 4.36779 3.71207 1.36621 8.00004 1.36621C12.288 1.36621 14.8608 4.36779 14.8608 8.65577Z"
+                  stroke="#34364A"
+                  stroke-opacity="0.9"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4.5697 8.22677C4.5697 9.13656 4.93112 10.0091 5.57444 10.6524C6.21776 11.2957 7.09029 11.6571 8.00008 11.6571C8.90988 11.6571 9.78241 11.2957 10.4257 10.6524C11.069 10.0091 11.4305 9.13656 11.4305 8.22677C11.4305 7.31697 11.069 6.44444 10.4257 5.80112C9.78241 5.1578 8.90988 4.79639 8.00008 4.79639C7.09029 4.79639 6.21776 5.1578 5.57444 5.80112C4.93112 6.44444 4.5697 7.31697 4.5697 8.22677V8.22677Z"
+                  stroke="#34364A"
+                  stroke-opacity="0.9"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg></span
+            >Bekasi
+          </p>
+        </div>
+      </div>
+      <hr class="containers" />
+      <div class="containers footer py-5">
+        <h3 class="text-center lg:text-left">
+          Copyright © 2023 Creature Studio
+        </h3>
+      </div>
+    </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
