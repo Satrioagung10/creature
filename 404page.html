@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="404 page karena website kami sedang maintance"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="images/icon-web.svg" type="image/x-icon" />
+    <title>Creature 404</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <style>
+    body {
+        height: 100vh;
+        display: flex;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    .not-text {
+        line-height: 4rem;
+    }
+
+    @media (max-width:1366px) {
+        .not-text {
+        line-height: 3rem;
+    }
+    }
+    @media (max-width:945px) {
+        .desc {
+        margin-top: 2.5rem;
+        }
+
+        .img-404 img {
+            width: 90%;
+        }
+    }
+ 
+
+    @media (max-width:768px) {
+    .not-text {
+        line-height: 2rem;
+    }
+
+    .desc {
+        margin-top: 2rem;
+    }
+    }
+
+    @media (max-width:325px) {
+    .btn-404 {
+        font-size: 14px;
+        padding: 10px 1.5rem;
+    }
+
+    .desc p {
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    }
+
+  </style>
+  <body>
+    <div class="containers flex flex-col lg:flex-row place-items-center">
+      <div class="desc lg:w-1/2 md:mt-0">
+        <h1 class="not-text text-2xl md:text-4xl 2xl:text-5xl font-bold">
+          OOPS! <br />
+          PAGE NOT FOUND
+        </h1>
+        <p class="py-4 md:py-7 text-lg md:text-xl">
+          We are really sorry because can’t find what you were looking for.
+          <br class="hidden 2xl:block">
+          Please try again later.
+        </p>
+        <a href="index.html">
+        <button
+          class="btn-404 bg-primary text-white text-base px-7 py-3 md:text-lg md:px-10 md:py-3 mt-2 md:mt-0"
+          style="border-radius: 20px"
+        >
+          GO TO HOMEPAGE
+        </button>
+        </a>
+      </div>
+      <div class="img-404 lg:w-1/2 -order-1 lg:order-1">
+        <img
+          src="https://media.discordapp.net/attachments/387127158935388160/1166763542876266566/404.png?ex=654bac3a&is=6539373a&hm=2d5be17afe870acd1bd09b0a28032b1731aaba552981f6fa93c41938c0bb4565&=&width=862&height=563"
+          alt="404-image"
+          width="730"
+          height="529"
+        />
+      </div>
+    </div>
+  </body>
+</html>
